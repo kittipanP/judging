@@ -24,11 +24,11 @@
 <div class="w3-card-2">
                             <div class="w3-display-container ">
                                 <div class="" style="min-height:">
-  								  <a href="#" class = "textdecoration">
+  								  <a href="projectAdv.php" class = "textdecoration">
                                     <img src="img/images/car.jpg" class="w3-hover-opacity" style="width:100%">
                                       <div class="w3-display-middle w3-display-hover"> 
                                         <div class="w3-panel w3-orange w3-card-2 ">
-                                          <a href="#" class = "textdecoration"><p>Engineering</p></a>
+                                          <a href="projectAdv.php" class = "textdecoration"><p>Engineering</p></a>
                                         </div>
                                       </div>
                                   </a> 
