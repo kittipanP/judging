@@ -12,6 +12,11 @@
 <body>
 
 
+        <?php 
+            require_once 'web_element/nav-top.php';
+        ?>
+
+
 
 <div class="w3-container w3-center">
   <hr>

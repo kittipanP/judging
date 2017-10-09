@@ -168,6 +168,12 @@
 <head>
   <meta charset="UTF-8">
   <title>3D Cylinder Chart</title>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+
+
+<link rel="icon" type="image/png" href="img/logo/wd.png"/>
   
   
   
@@ -177,6 +183,15 @@
 </head>
 
 <body>
+
+
+        <?php 
+            require_once '../web_element/nav-topii.php';
+        ?>
+
+
+
+
   <script src="js/amcharts.js"></script>
 <script src="https://www.amcharts.com/lib/3/serial.js"></script>
 
