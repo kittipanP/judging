@@ -70,7 +70,7 @@
   <!-- Navbar (placed at the bottom of the header image) -->
   <div class="w3-bar w3-light-grey w3-round w3-display-bottommiddle w3-hide-small" style="bottom:-16px">
     <a href="index.php" class="w3-bar-item w3-button">Home</a>
-    <a href="#portfolio" class="w3-bar-item w3-button">Score</a>
+    <a href="scoreResult/score.php" class="w3-bar-item w3-button">Score</a>
   </div>
 </header>
 
@@ -78,7 +78,7 @@
 <div class="w3-center w3-light-grey w3-padding-16 w3-hide-large w3-hide-medium">
 <div class="w3-bar w3-light-grey">
   <a href="index.php" class="w3-bar-item w3-button">Home</a>
-  <a href="#portfolio" class="w3-bar-item w3-button">Score</a>
+  <a href="scoreResult/score.php" class="w3-bar-item w3-button">Score</a>
 </div>
 </div>
 
