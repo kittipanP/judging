@@ -12,7 +12,7 @@
     mysqli_select_db($MyConnect, $database_MyConnect);
       $query_studentSet_all = "SELECT * FROM contestant
       INNER JOIN type_contest ON type_contest.typ_id = contestant.type_contest_typ_id
-      WHERE contestant.type_contest_typ_id = 1
+      WHERE contestant.type_contest_typ_id = 3
       ORDER BY contestant.con_id DESC";
     $query_limit_studentSet_all = sprintf("%s LIMIT %d, %d", $query_studentSet_all, $startRow_studentSet_all, $maxRows_studentSet_all);
     $studentSet_all = mysqli_query($MyConnect, $query_limit_studentSet_all) or die(mysqli_error($MyConnect));

@@ -44,12 +44,12 @@
 <div class="w3-card-4">
                             <div class="w3-display-container ">
                                 <div class="" style="min-height:">
-                                  <a href="" class = "textdecoration">
+                                  <a href="projectQlyEng.php" class = "textdecoration">
                                     <img src="img/images/car-i.jpg" class="w3-hover-opacity" style="width:100%">
 
                                   <div class="w3-display-topright w3-display-hover"> 
                                     <div class="w3-panel w3-blue-grey w3-card-4 " >
-                                      <a href=""><p>&nbsp;&nbsp;&nbsp;&nbsp;Engineering</p></a>
+                                      <a href="projectQlyEng.php"><p>&nbsp;&nbsp;&nbsp;&nbsp;Engineering</p></a>
                                     </div>
                                   </div>
 
@@ -60,14 +60,14 @@
                             <!-- On Process ii -->
                             <div class="w3-display-container">
                                 <div class="" style="min-height:">
-                                  <a href="" class = "textdecoration">
+                                  <a href="projectQlyDL-Tech.php" class = "textdecoration">
                                     <img src="img/images/car-ii.jpg" class="w3-hover-opacity" style="width:100%">
 
 
 
                                   <div class="w3-display-topright w3-display-hover"> 
                                     <div class="w3-panel w3-blue-grey w3-card-4 " >
-                                      <a href="#"><p>DL, Tech, Staff</p></a>
+                                      <a href="projectQlyDL-Tech.php"><p>DL, Tech, Staff</p></a>
                                     </div>
                                   </div>
 
@@ -85,12 +85,12 @@
 <div class="w3-card-4">
                             <div class="w3-display-container ">
                                 <div class="" style="min-height:">
-                                  <a href="" class = "textdecoration">
+                                  <a href="projectOpsEng.php" class = "textdecoration">
                                     <img src="img/images/car-i.jpg" class="w3-hover-opacity" style="width:100%">
 
                                   <div class="w3-display-topright w3-display-hover"> 
                                     <div class="w3-panel w3-blue-grey w3-card-4 " >
-                                      <a href=""><p>&nbsp;&nbsp;&nbsp;&nbsp;Engineering</p></a>
+                                      <a href="projectOpsEng.php"><p>&nbsp;&nbsp;&nbsp;&nbsp;Engineering</p></a>
                                     </div>
                                   </div>
 
@@ -101,14 +101,14 @@
                             <!-- On Process ii -->
                             <div class="w3-display-container">
                                 <div class="" style="min-height:">
-                                  <a href="" class = "textdecoration">
+                                  <a href="projectOpsDL-Tech.php" class = "textdecoration">
                                     <img src="img/images/car-ii.jpg" class="w3-hover-opacity" style="width:100%">
 
 
 
                                   <div class="w3-display-topright w3-display-hover"> 
                                     <div class="w3-panel w3-blue-grey w3-card-4 " >
-                                      <a href="#"><p>DL, Tech, Staff</p></a>
+                                      <a href="projectOpsDL-Tech.php"><p>DL, Tech, Staff</p></a>
                                     </div>
                                   </div>
 
