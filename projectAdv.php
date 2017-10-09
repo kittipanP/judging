@@ -168,5 +168,11 @@ function onClick(element) {
 </div>
 
 <br>
+
+
+<?php 
+    //Footer
+    require_once 'web_element/footer.php'; 
+?> 
 </body>
 </html>
