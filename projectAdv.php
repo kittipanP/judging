@@ -58,13 +58,36 @@
 
 <link rel="icon" type="image/png" href="img/logo/wd.png"/>
 <body>
+<!-- Header -->
+<header class="w3-display-container w3-content w3-center" style="max-width:1500px">
+  <img class="w3-image" src="img/images/photographer.jpg" alt="Me" width="1500" height="600">
+  <div class="w3-display-middle w3-padding-large w3-border w3-wide w3-text-light-grey w3-center">
+    <h1 class="w3-hide-medium w3-hide-small w3-xxxlarge">Innovation Bazaar</h1>
+    <h5 class="w3-hide-large" style="white-space:nowrap">Innovation Bazaar</h5>
+    <h3 class="w3-hide-medium w3-hide-small">Advance Process Technology</h3>
+  </div>
+  
+  <!-- Navbar (placed at the bottom of the header image) -->
+  <div class="w3-bar w3-light-grey w3-round w3-display-bottommiddle w3-hide-small" style="bottom:-16px">
+    <a href="index.php" class="w3-bar-item w3-button">Home</a>
+    <a href="#portfolio" class="w3-bar-item w3-button">Score</a>
+  </div>
+</header>
+
+<!-- Navbar on small screens -->
+<div class="w3-center w3-light-grey w3-padding-16 w3-hide-large w3-hide-medium">
+<div class="w3-bar w3-light-grey">
+  <a href="index.php" class="w3-bar-item w3-button">Home</a>
+  <a href="#portfolio" class="w3-bar-item w3-button">Score</a>
+</div>
+</div>
 
 
 
 <div class="w3-container w3-content" style="max-width:1400px;margin-top:80px">
         <div class="w3-container w3-card-2 w3-white w3-round w3-margin" id="onProcess">
                       <h2>Advance Process Technology</h2>
-                      <p>Plesas Click the project for ..</p>
+                      <p>Plesas Click the project for giving your judging</p>
                     
                     
                     <table class="w3-table-all w3-margin-top w3-hoverable" id="onProcessiiTable">
@@ -97,16 +120,38 @@
                           
                               ?>
                               <td><?php echo $b; ?></td>
-                              <td></td>
-                              <td><?php echo $row_studentSet['con_project']; ?></td>
+                              <td>
+
+							    <img src="img/poster/<?php echo $row_studentSet['con_poster']; ?>" style="width:50px;cursor:pointer" 
+							    onclick="onClick(this)" class="w3-hover-opacity">
+                              	
+
+                              </td>
+                              <td><a href="evaluation.php?con_id=<?php echo $row_studentSet['con_id']; ?>" ><?php echo $row_studentSet['con_project']; ?></td>
                               <td><?php echo $row_studentSet['con_name']; ?></td>
                               <td><?php echo $row_studentSet['con_site']; ?></td>
                               <!--
                               <a class="btn btn-sm btn-danger" id="delete_product" data-id="<?php echo $product_id; ?>" href="javascript:void(0)"><i class="glyphicon glyphicon-trash"></i></a>
                               -->
-                            </tr> 
+                            </tr>
                         <?php } while ($row_studentSet = mysqli_fetch_assoc($studentSet_all)); ?>               
                     </table>
+
+
+
+<div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+  <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+  <div class="w3-modal-content w3-animate-zoom">
+    <img id="img01" style="width:100%">
+  </div>
+</div>
+
+<script>
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+}
+</script>
                       
                       <p>&nbsp;</p>
                
