@@ -1,3 +1,155 @@
+
+
+
+<?php require_once('Connections/MyConnect.php'); ?>
+<?php
+if (!function_exists("GetSQLValueString")) {
+function GetSQLValueString($theValue, $theType, $theDefinedValue = "", $theNotDefinedValue = "") 
+{
+  if (PHP_VERSION < 8) {
+    $theValue = get_magic_quotes_gpc() ? stripslashes($theValue) : $theValue;
+  }
+
+  $theValue = function_exists("mysqli_real_escape_string") ? mysqli_real_escape_string(dbconnect(),$theValue) : mysqli_escape_string(dbconnect(),$theValue);
+
+  switch ($theType) {
+    case "text":
+      $theValue = ($theValue != "") ? "'" . $theValue . "'" : "NULL";
+      break;    
+    case "long":
+    case "int":
+      $theValue = ($theValue != "") ? intval($theValue) : "NULL";
+      break;
+    case "double":
+      $theValue = ($theValue != "") ? doubleval($theValue) : "NULL";
+      break;
+    case "date":
+      $theValue = ($theValue != "") ? "'" . $theValue . "'" : "NULL";
+      break;
+    case "defined":
+      $theValue = ($theValue != "") ? $theDefinedValue : $theNotDefinedValue;
+      break;
+  }
+  return $theValue;
+}
+}
+
+$currentPage = $_SERVER["PHP_SELF"];
+
+$editFormAction = $_SERVER['PHP_SELF'];
+if (isset($_SERVER['QUERY_STRING'])) {
+  $editFormAction .= "?" . htmlentities($_SERVER['QUERY_STRING']);
+}
+
+    /*-- Reccordset Student_Info [S]--*/
+    if ((isset($_POST["MM_insert"])) && ($_POST["MM_insert"] == "form1")) {
+  
+  
+
+
+    $insertSQL_com = sprintf("INSERT INTO committee (com_id, com_name, com_evai, com_evaii, com_evaiii, com_evaiv, com_comment, fkcon_id) VALUES (%s, %s, %s, %s, %s, %s, %s, %s)",
+                       GetSQLValueString($_POST['com_id'], "int"),
+                       GetSQLValueString($_POST['com_name'], "text"),
+                       GetSQLValueString($_POST['com_evai'], "int"),
+                       GetSQLValueString($_POST['com_evaii'], "int"),
+                       GetSQLValueString($_POST['com_evaiii'], "int"),
+                       GetSQLValueString($_POST['com_evaiv'], "int"),
+                       GetSQLValueString($_POST['com_comment'], "text"),
+                       GetSQLValueString($_POST['fkcon_id'], "int"));
+
+
+
+
+
+             
+
+  
+      mysqli_select_db($MyConnect, $database_MyConnect);
+     
+      $Result1_com = mysqli_query($MyConnect, $insertSQL_com) or die(mysqli_error($MyConnect));
+
+    
+      $insertGoTo = "index.php";
+      if (isset($_SERVER['QUERY_STRING'])) {
+      $insertGoTo .= (strpos($insertGoTo, '?')) ? "&" : "?";
+      $insertGoTo .= $_SERVER['QUERY_STRING'];
+      }
+      header(sprintf("Location: %s", $insertGoTo));
+    }
+
+
+    $maxRows_studentSet_all = 18;
+    $pageNum_studentSet_all = 0;
+    if (isset($_GET['pageNum_studentSet_all'])) {
+      $pageNum_studentSet_all = $_GET['pageNum_studentSet_all'];
+    }
+    $startRow_studentSet_all = $pageNum_studentSet_all * $maxRows_studentSet_all;
+    
+    mysqli_select_db($MyConnect, $database_MyConnect);
+
+
+          $query_spvSet = "SELECT * FROM committee
+            ORDER BY com_id DESC";
+          $spvSet = mysqli_query($MyConnect, $query_spvSet) or die(mysqli_error());
+          $row_spvSet = mysqli_fetch_assoc($spvSet);
+          $totalRows_spvSet = mysqli_num_rows($spvSet);
+
+      $query_studentSet_all = "SELECT * FROM contestant
+      INNER JOIN type_contest ON type_contest.typ_id = contestant.type_contest_typ_id";
+    $query_limit_studentSet_all = sprintf("%s LIMIT %d, %d", $query_studentSet_all, $startRow_studentSet_all, $maxRows_studentSet_all);
+    $studentSet_all = mysqli_query($MyConnect, $query_limit_studentSet_all) or die(mysqli_error($MyConnect));
+    $row_studentSet = mysqli_fetch_assoc($studentSet_all);
+    
+    if (isset($_GET['totalRows_studentSet_onProcess'])) {
+      $totalRows_studentSet_onProcess = $_GET['totalRows_studentSet_onProcess'];
+    } else {
+      $all_studentSet = mysqli_query(dbconnect(), $query_studentSet_all);
+      $totalRows_studentSet_onProcess = mysqli_num_rows($all_studentSet);
+    }
+    $totalPages_studentSet = ceil($totalRows_studentSet_onProcess/$maxRows_studentSet_all)-1;
+    
+    $queryString_studentSet = "";
+    if (!empty($_SERVER['QUERY_STRING'])) {
+      $params = explode("&", $_SERVER['QUERY_STRING']);
+      $newParams = array();
+      foreach ($params as $param) {
+      if (stristr($param, "pageNum_studentSet_all") == false && 
+        stristr($param, "totalRows_studentSet_onProcess") == false) {
+        array_push($newParams, $param);
+      }
+      }
+      if (count($newParams) != 0) {
+      $queryString_studentSet = "&" . htmlentities(implode("&", $newParams));
+      }
+    }
+    $queryString_studentSet = sprintf("&totalRows_studentSet_onProcess=%d%s", $totalRows_studentSet_onProcess, $queryString_studentSet);
+
+    
+
+
+mysqli_select_db($MyConnect, $database_MyConnect);
+/*
+$query_pvnSet = "SELECT * FROM province";
+$pvnSet = mysqli_query($MyConnect, $query_pvnSet) or die(mysqli_error());
+$row_pvnSet = mysqli_fetch_assoc($pvnSet);
+$totalRows_pvnSet = mysqli_num_rows($pvnSet);
+*/
+?>
+
+
+<?php
+
+
+mysqli_close($MyConnect);
+?>
+
+
+<?php
+
+
+
+?>
+
 <!DOCTYPE html>
 <html >
 <head>
@@ -5,129 +157,245 @@
   <title>jQuery | Custom Radio Buttons Survey</title>
   
   
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   
-      <link rel="stylesheet" href="css/style.css?v=23999">
+      <link rel="stylesheet" href="css/style.css?v=9801"> 
 
   
 </head>
 
 <body>
-  <div class="rb-box">
 
-  <!-- Radio Button Module -->
-  <p>1. </p>
-  <div id="rb-1" class="rb">
-    <div class="rb-tab" data-value="1">
-      <div class="rb-spot">
-        <span class="rb-txt">1</span>
-      </div>
-    </div><div class="rb-tab" data-value="2">
-      <div class="rb-spot">
-        <span class="rb-txt">2</span>
-      </div>
-    </div><div class="rb-tab" data-value="3">
-      <div class="rb-spot">
-        <span class="rb-txt">3</span>
-      </div>
-    </div><div class="rb-tab" data-value="4">
-      <div class="rb-spot">
-        <span class="rb-txt">4</span>
-      </div>
-    </div><div class="rb-tab" data-value="5">
-      <div class="rb-spot">
-        <span class="rb-txt">5</span>
-      </div>
-    </div>
-  </div>
 
-  <!-- Radio Button Module -->
-  <p>2. </p>
-  <div id="rb-2" class="rb">
-    <div class="rb-tab" data-value="1">
-      <div class="rb-spot">
-        <span class="rb-txt">1</span>
-      </div>
-    </div><div class="rb-tab " data-value="2">
-      <div class="rb-spot">
-        <span class="rb-txt">2</span>
-      </div>
-    </div><div class="rb-tab" data-value="3">
-      <div class="rb-spot">
-        <span class="rb-txt">3</span>
-      </div>
-    </div><div class="rb-tab" data-value="4">
-      <div class="rb-spot">
-        <span class="rb-txt">4</span>
-      </div>
-    </div><div class="rb-tab" data-value="5">
-      <div class="rb-spot">
-        <span class="rb-txt">5</span>
-      </div>
-    </div>
-  </div>
+    <form action="<?php echo $editFormAction; ?>" method="post" name="form1" id="fullform" enctype="multipart/form-data">    
 
-  <!-- Radio Button Module -->
-  <p>3. </p>
-  <div id="rb-3" class="rb">
-    <div class="rb-tab" data-value="1">
-      <div class="rb-spot">
-        <span class="rb-txt">1</span>
-      </div>
-    </div><div class="rb-tab" data-value="2">
-      <div class="rb-spot">
-        <span class="rb-txt">2</span>
-      </div>
-    </div><div class="rb-tab " data-value="3">
-      <div class="rb-spot">
-        <span class="rb-txt">3</span>
-      </div>
-    </div><div class="rb-tab" data-value="4">
-      <div class="rb-spot">
-        <span class="rb-txt">4</span>
-      </div>
-    </div><div class="rb-tab" data-value="5">
-      <div class="rb-spot">
-        <span class="rb-txt">5</span>
-      </div>
-    </div>
-  </div>
 
-  <!-- Radio Button Module -->
-  <p>4. </p>
-  <div id="rb-4" class="rb">
-    <div class="rb-tab" data-value="1">
-      <div class="rb-spot">
-        <span class="rb-txt">1</span>
-      </div>
-    </div><div class="rb-tab" data-value="2">
-      <div class="rb-spot">
-        <span class="rb-txt">2</span>
-      </div>
-    </div><div class="rb-tab" data-value="3">
-      <div class="rb-spot">
-        <span class="rb-txt">3</span>
-      </div>
-    </div><div class="rb-tab " data-value="4">
-      <div class="rb-spot">
-        <span class="rb-txt">4</span>
-      </div>
-    </div><div class="rb-tab" data-value="5">
-      <div class="rb-spot">
-        <span class="rb-txt">5</span>
-      </div>
-    </div>
-  </div>
+          <div class="rb-box">
+
+          <input type="hidden" name="com_id" value="" size="32" /><br>
+          <div align="left">
+              <label for="titleSelect"> Committee's Name : </label>
+          </div>
+
+
+          <input type="text" name="com_name" value="" size="32" />
+
+
+          <input type="hidden" name="fkcon_id" value="<?php echo $_GET['con_id']; ?>" size="32" />
+
+
+
+
+
+
+
+
+          <!-- Radio Button Module -->
+          <p><B>1. Problem Definition </B>: Does the team have a clear and deep understanding of the problem? Do they understand the environment that surrounds the problem? 
+        (Make it Happen)
+         </p>
+          <div id="rb-1" class="rb">
+
+            <div class="rb-tab">
+              <div class="rb-spot">
+                    <input class="rb-tab rb-spot rb-txt" id="option1" name="com_evai" type="radio" value="1">
+                    <label for="option1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1</label>
+              </div>
+            </div><div class="rb-tab" data-value="2">
+              <div class="rb-spot">
+                    <input class="rb-tab rb-spot rb-txt" id="option1" name="com_evai" type="radio" value="2">
+                    <label for="option1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2</label>
+              </div>
+            </div><div class="rb-tab" data-value="3">
+              <div class="rb-spot">
+                    <input class="rb-tab rb-spot rb-txt" id="option1" name="com_evai" type="radio" value="3">
+                    <label for="option1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3</label>
+              </div>
+            </div><div class="rb-tab" data-value="4">
+              <div class="rb-spot">
+                    <input class="rb-tab rb-spot rb-txt" id="option1" name="com_evai" type="radio" value="4">
+                    <label for="option1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4</label>
+              </div>
+            </div><div class="rb-tab" data-value="5">
+              <div class="rb-spot">
+                    <input class="rb-tab rb-spot rb-txt" id="option1" name="com_evai" type="radio" value="5">
+                    <label for="option1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5</label>
+              </div>
+            </div>
+            
+          </div>
+
+          <!-- Radio Button Module -->
+          <p>2. Innovation: Has the team clearly defined a solution, supporting customers? Is their solution distinctive or fundamentally different from existing approaches? Could their solution viably be implemented and sustained in the real world? 
+        (Think Big)
+        </p>
+          <div id="rb-2" class="rb">
+
+
+            <div class="rb-tab">
+              <div class="rb-spot">
+                    <input class="rb-tab rb-spot rb-txt" id="option1" name="com_evaii" type="radio" value="1">
+                    <label for="option1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1</label>
+              </div>
+            </div><div class="rb-tab" data-value="2">
+              <div class="rb-spot">
+                    <input class="rb-tab rb-spot rb-txt" id="option1" name="com_evaii" type="radio" value="2">
+                    <label for="option1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2</label>
+              </div>
+            </div><div class="rb-tab" data-value="3">
+              <div class="rb-spot">
+                    <input class="rb-tab rb-spot rb-txt" id="option1" name="com_evaii" type="radio" value="3">
+                    <label for="option1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3</label>
+              </div>
+            </div><div class="rb-tab" data-value="4">
+              <div class="rb-spot">
+                    <input class="rb-tab rb-spot rb-txt" id="option1" name="com_evaii" type="radio" value="4">
+                    <label for="option1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4</label>
+              </div>
+            </div><div class="rb-tab" data-value="5">
+              <div class="rb-spot">
+                    <input class="rb-tab rb-spot rb-txt" id="option1" name="com_evaii" type="radio" value="5">
+                    <label for="option1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5</label>
+              </div>
+            </div>
+
+
+          </div>
+
+          <!-- Radio Button Module -->
+          <p>3. Sustainability: Has the team developed a plan for the sustainability of their innovation? (For this competition, sustainability means the ability to continually generate benefit to sustain the operations of the team's innovation.)
+        (Make it Happen)
+        </p>
+          <div id="rb-3" class="rb">
+
+
+            <div class="rb-tab">
+              <div class="rb-spot">
+                    <input class="rb-tab rb-spot rb-txt" id="option1" name="com_evaiii" type="radio" value="1">
+                    <label for="option1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1</label>
+              </div>
+            </div><div class="rb-tab" data-value="2">
+              <div class="rb-spot">
+                    <input class="rb-tab rb-spot rb-txt" id="option1" name="com_evaiii" type="radio" value="2">
+                    <label for="option1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2</label>
+              </div>
+            </div><div class="rb-tab" data-value="3">
+              <div class="rb-spot">
+                    <input class="rb-tab rb-spot rb-txt" id="option1" name="com_evaiii" type="radio" value="3">
+                    <label for="option1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3</label>
+              </div>
+            </div><div class="rb-tab" data-value="4">
+              <div class="rb-spot">
+                    <input class="rb-tab rb-spot rb-txt" id="option1" name="com_evaiii" type="radio" value="4">
+                    <label for="option1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4</label>
+              </div>
+            </div><div class="rb-tab" data-value="5">
+              <div class="rb-spot">
+                    <input class="rb-tab rb-spot rb-txt" id="option1" name="com_evaiii" type="radio" value="5">
+                    <label for="option1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5</label>
+              </div>
+            </div>
+
+
+          </div>
+
+          <!-- Radio Button Module -->
+          <p>4. The Team: Does the team include the diversity of expertise necessary to accomplish their goals? Does the team comprise the right people to do the job? Was the presentation professional and well-practiced, to stakeholders? 
+        (Do it Together)
+        </p>
+          <div id="rb-4" class="rb">
+
+
+            <div class="rb-tab">
+              <div class="rb-spot">
+                    <input class="rb-tab rb-spot rb-txt" id="option1" name="com_evaiv" type="radio" value="1">
+                    <label for="option1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1</label>
+              </div>
+            </div><div class="rb-tab" data-value="2">
+              <div class="rb-spot">
+                    <input class="rb-tab rb-spot rb-txt" id="option1" name="com_evaiv" type="radio" value="2">
+                    <label for="option1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2</label>
+              </div>
+            </div><div class="rb-tab" data-value="3">
+              <div class="rb-spot">
+                    <input class="rb-tab rb-spot rb-txt" id="option1" name="com_evaiv" type="radio" value="3">
+                    <label for="option1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3</label>
+              </div>
+            </div><div class="rb-tab" data-value="4">
+              <div class="rb-spot">
+                    <input class="rb-tab rb-spot rb-txt" id="option1" name="com_evaiv" type="radio" value="4">
+                    <label for="option1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4</label>
+              </div>
+            </div><div class="rb-tab" data-value="5">
+              <div class="rb-spot">
+                    <input class="rb-tab rb-spot rb-txt" id="option1" name="com_evaiv" type="radio" value="5">
+                    <label for="option1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5</label>
+              </div>
+            </div>
+
+
+          </div>
+
+
+          <div align="left">
+              <label for="comment"> Comment : </label>
+          </div>
+          <textarea type="text" name="com_comment" value="" size="32"></textarea> 
 
 
   <!-- Button -->
+
   <div class="button-box">
-    <button class="button trigger">Submit!</button>
+    <!--<button class="button trigger">Submit!</button>-->
+
+        <button type="submit" name="submit" class="action-button button trigger" value="Submit" >Submit!</button>
   </div>
+        <input type="hidden" name="MM_insert" class="submit action-button" value="fullform" />
+        <input type="hidden" name="MM_insert" value="form1" />
+    </form>
+
+
+
 
 </div>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
 
-    <script src="js/index.js"></script>
+    <script >
+      var survey = []; //Bidimensional array: [ [1,3], [2,4] ]
+
+//Switcher function:
+$(".rb-tab").click(function(){
+  //Spot switcher:
+  $(this).parent().find(".rb-tab").removeClass("rb-tab-active");
+  $(this).addClass("rb-tab-active");
+});
+
+//Save data:
+$(".trigger").click(function(){
+  //Empty array:
+  survey = [];
+  //Push data:
+  for (i=1; i<=$(".rb").length; i++) {
+    var rb = "rb" + i;
+    var rbValue = parseInt($("#rb-"+i).find(".rb-tab-active").attr("data-value"));
+    //Bidimensional array push:
+    survey.push([i, rbValue]); //Bidimensional array: [ [1,3], [2,4] ]
+  };
+  //Debug:
+  debug();
+});
+
+//Debug:
+function debug(){
+  var debug = "";
+  for (i=0; i<survey.length; i++) {
+    debug += "Nº " + survey[i][0] + " = " + survey[i][1] + "\n";
+  };
+  alert(debug);
+};
+      
+
+    </script>  
 
 </body>
 </html>
