@@ -57,6 +57,14 @@
 
 
 <link rel="icon" type="image/png" href="img/logo/wd.png"/>
+<STYLE TYPE="TEXT/CSS"><!--
+A:link  {
+text-decoration:none;
+}
+A:visited {
+text-decoration:none;
+}
+//--></STYLE>
 <body>
 
 
