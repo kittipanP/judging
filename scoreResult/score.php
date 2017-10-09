@@ -167,7 +167,7 @@
 <html >
 <head>
   <meta charset="UTF-8">
-  <title>3D Cylinder Chart</title>
+  <title>3D Score Result</title>
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
@@ -181,6 +181,30 @@
 
   
 </head>
+<style type="text/css">
+  body {
+  /*font-family: sans-serif; */
+  /*background: #42426b; */
+  /*background: url(../img/bg/bgii.jpg);*/
+  /*background-image: linear-gradient(-45deg, #8067B7, #EC87C0); */
+  /*color: rgba(255,255,255,.5); */
+}
+
+</style>
+<style>
+html,body,h1,h2,h3,h4,h5 {font-family: "Lato", sans-serif;}
+header{ background: url(../img/bg/brunch.png); } 
+
+body, html {
+    height: 500px;
+    color: #0000;
+    line-height: 1.8;
+
+  background: url(../img/bg/bgi.jpg); 
+}
+
+</style>
+
 
 <body>
 
@@ -188,8 +212,83 @@
         <?php 
             require_once '../web_element/nav-topii.php';
         ?>
+      <!-- Header -->
+      <header class="w3-theme w3-padding w3-opacity-min" id="myHeader"> 
+
+        <!-- Navigation II--> 
+       <div class="w3-left">      
+        <span class="w3-xxlarge" onclick="w3_open()">&#9776;</span>  
+        </div>   
+     
+        <!--<i onclick="w3_open()" class="fa fa-bars w3-xlarge w3-opennav"></i> -->
+<!--        <div class="w3-left">
+            <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Innovation Competition ..            </h4>
+            <h1 class="w3-xxxlarge w3-animate-bottom " style="text-shadow:3px 2px 0 #444">&nbsp;&nbsp;&nbsp;Score Result</h1>
+            
+        </div> --><br><br>
+        <div class="w3-row">
+  <div class="w3-third w3-center">
+    <h5 style="text-shadow:3px 1px 0 #444" >Advance Process Technology</h5> 
+          
+  </div>
+  <div class="w3-third w3-center">
+    <h5 style="text-shadow:3px 1px 0 #444" >Quality</h5>  
+  </div>
+  <div class="w3-third w3-center">
+    <h5 style="text-shadow:3px 1px 0 #444" >Operation/Yield/People</h5> 
+  </div>
+</div>
+      </header>
+
+<div class="w3-row">
+<div class="w3-container ">
 
 
+<div class="w3-row">
+  <div class="w3-third w3-center  " >
+          <div class="w3-row " >
+            <div class="w3-center w3-col.s12 w3-amber w3-hover-light-grey w3-hide-small" style="bottom:100%;opacity:0.5;width:100%">
+              <p>Technician, Staff and Engineer </p>
+            </div>
+            
+          </div>
+  </div>
+  <div class="w3-third w3-center">
+          <div class="w3-row ">
+            <div class="w3-half">
+              <div class="w3-blue w3-hover-light-grey w3-hide-small" style="bottom:100%;opacity:0.5;width:100%">
+                <p>Engineer </p>
+              </div>
+            </div>
+            <div class="w3-half ">
+              <div class="w3-purple w3-hover-light-grey w3-hide-small" style="bottom:100%;opacity:0.5;width:100%">
+                <p>DL and Technician</p>
+              </div>
+              </div>
+          </div>
+  </div>
+  <div class="w3-third w3-center"> 
+          <div class="w3-row ">
+            <div class="w3-half">
+              <div class="w3-grey w3-hover-light-grey w3-hide-small" style="bottom:100%;opacity:0.5;width:100%">
+                <p>Engineer</p>
+              </div>
+            </div>
+            <div class="w3-half ">
+              <div class="w3-black w3-hover-light-grey w3-hide-small" style="bottom:100%;opacity:0.5;width:100%">
+                <p>DL and Technician</p>
+            </div>
+            </div>
+          </div>
+  </div>
+</div>
+<br>
+
+</div>
+
+
+    <div class="w3-bottombar ">
+    </div>
 
 
   <script src="js/amcharts.js"></script>
@@ -293,26 +392,46 @@
                         ?>
 
 
-
 <div id="chartdiv"></div>
 <div class="container-fluid">
   <div class="row text-center" style="overflow:hidden;">
+
+
+<br>
+<br>
     <div class="col-sm-3" style="float: none !important;display: inline-block;">
-      <label class="text-left">Top Radius:</label>
+      <label class="text-left">&nbsp;&nbsp;&nbsp;&nbsp;Top Radius:&nbsp;&nbsp;&nbsp;&nbsp;</label>
       <input class="chart-input" data-property="topRadius" type="range" min="0" max="1.5" value="1" step="0.01" />
     </div>
 
     <div class="col-sm-3" style="float: none !important;display: inline-block;">
-      <label class="text-left">Angle:</label>
+      <label class="text-left">&nbsp;&nbsp;&nbsp;&nbsp;Angle:&nbsp;&nbsp;&nbsp;&nbsp;</label>
       <input class="chart-input" data-property="angle" type="range" min="0" max="89" value="30" step="1" />
     </div>
 
     <div class="col-sm-3" style="float: none !important;display: inline-block;">
-      <label class="text-left">Depth:</label>
+      <label class="text-left">&nbsp;&nbsp;&nbsp;&nbsp;Depth:&nbsp;&nbsp;&nbsp;&nbsp;</label>
       <input class="chart-input" data-property="depth3D" type="range" min="1" max="120" value="40" step="1" />
     </div>
   </div>
 </div>
+
+
+</div>
+<br>
+<br>
+
+<footer class = "footer">
+    <div class="w3-container w3-theme-d3 w3-padding-16 ">
+    <h5>Footer</h5>
+    </div>
+    <div class="w3-container w3-theme-d5  " >
+       <p>By <a href="#" target="_blank">WD Trainee Team</a></p>
+    </div>
+</footer>
+
+
+
   <script src='https://code.jquery.com/jquery-1.11.2.min.js'></script>
 
     <script  src="js/index.js?v=22"></script>
