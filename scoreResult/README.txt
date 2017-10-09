@@ -1,0 +1,3 @@
+A Pen created at CodePen.io. You can find this one at https://codepen.io/team/amcharts/pen/myraVd.
+
+ Columns and bars in our charts can look like cylinders or even cones. To achieve this, you should set <strong>topRadius</strong> property of a graph to 0 - 1.5 value. You can adjust depth and angle to make them more deep - click EDIT button and play with <strong>depth3D</strong> and <strong>angle</strong> properties.
