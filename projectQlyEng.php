@@ -58,6 +58,13 @@
 
 <link rel="icon" type="image/png" href="img/logo/wd.png"/>
 <body>
+
+
+        <?php 
+            require_once 'web_element/nav-top.php';
+        ?>
+
+        
 <!-- Header -->
 <header class="w3-display-container w3-content w3-center" style="max-width:1500px">
   <img class="w3-image" src="img/images/photographer.jpg" alt="Me" width="1500" height="600">
@@ -162,5 +169,11 @@ function onClick(element) {
 </div>
 
 <br>
+
+
+<?php 
+    //Footer
+    require_once 'web_element/footer.php'; 
+?> 
 </body>
 </html>

@@ -9,7 +9,26 @@
 
 
 <link rel="icon" type="image/png" href="img/logo/wd.png"/>
+<style>
+html,body,h1,h2,h3,h4,h5 {font-family: "Lato", sans-serif;}
+header{ background: url(../img/bg/brunch.png); } 
+
+body, html {
+    height: 500px;
+    color: #0000;
+    line-height: 1.8;
+
+  background: url(img/bg/bgi.jpg); 
+}
+
+</style>
+
 <body>
+
+
+        <?php 
+            require_once 'web_element/nav-top.php';
+        ?>
 
 
 
@@ -123,5 +142,15 @@
 </div>
 </div>
 <br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<?php 
+    //Footer
+    require_once 'web_element/footer.php'; 
+?> 
 </body>
 </html>
