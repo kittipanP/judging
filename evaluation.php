@@ -170,6 +170,15 @@ mysqli_close($MyConnect);
   
 </head>
 
+<STYLE TYPE="TEXT/CSS"><!--
+A:link  {
+text-decoration:none;
+}
+A:visited {
+text-decoration:none;
+}
+//--></STYLE>
+
 <body>
 
 
