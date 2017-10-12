@@ -199,6 +199,30 @@ text-decoration:none;
   /*color: rgba(255,255,255,.5); */
 }
 
+
+<!--footer-->
+<style type="text/css">
+html, body { 
+   height: 100%; /* ให้ html และ body สูงเต็มจอภาพไว้ก่อน */
+   margin: 0;
+   padding: 0;
+}
+.wrapper {
+   display: block;
+   min-height: 100%; /* real browsers */
+   height: auto !important; /* real browsers */
+   height: 100%; /* IE6 bug */
+   margin-bottom: -20px; /* กำหนด margin-bottom ให้ติดลบเท่ากับความสูงของ footer */
+}
+.footer {
+   height: 20px; /* ความสูงของ footer */
+   display: block;
+   text-align: center;
+}
+</style>
+
+
+
 </style>
 <style>
 html,body,h1,h2,h3,h4,h5 {font-family: "Lato", sans-serif;}
