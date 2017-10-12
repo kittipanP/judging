@@ -230,11 +230,11 @@ body, html {
         </div>   
      
         <!--<i onclick="w3_open()" class="fa fa-bars w3-xlarge w3-opennav"></i> -->
-<!--        <div class="w3-left">
+       <div class="w3-left">
             <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Innovation Competition ..            </h4>
             <h1 class="w3-xxxlarge w3-animate-bottom " style="text-shadow:3px 2px 0 #444">&nbsp;&nbsp;&nbsp;Score Result</h1>
             
-        </div> --><br><br>
+        </div> <br><br>
         <div class="w3-row">
   <div class="w3-third w3-center">
     <h5 style="text-shadow:3px 1px 0 #444" >Advance Process Technology</h5> 

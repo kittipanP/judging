@@ -75,7 +75,7 @@ text-decoration:none;
         
 <!-- Header -->
 <header class="w3-display-container w3-content w3-center" style="max-width:1500px">
-  <img class="w3-image" src="img/images/photographer.jpg" alt="Me" width="1500" height="600">
+  <img class="w3-image" src="img/images//2-1.png" alt="Me" width="1500" height="600">
   <div class="w3-display-middle w3-padding-large w3-border w3-wide w3-text-light-grey w3-center">
     <h1 class="w3-hide-medium w3-hide-small w3-xxxlarge">Innovation Bazaar</h1>
     <h5 class="w3-hide-large" style="white-space:nowrap">Innovation Bazaar</h5>
@@ -101,7 +101,7 @@ text-decoration:none;
 
 <div class="w3-container w3-content" style="max-width:1400px;margin-top:80px">
         <div class="w3-container w3-card-2 w3-white w3-round w3-margin" id="onProcess">
-                      <h2>Advance Process Technology</h2>
+                      <h2>Quality [Engineer]  </h2>
                       <p>Plesas Click the project for giving your judging</p>
                     
                     
