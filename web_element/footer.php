@@ -3,6 +3,6 @@
     <h5>Footer</h5>
     </div>
     <div class="w3-container w3-theme-d5  " >
-       <p>By <a href="#" target="_blank">WD Trainee Team</a></p>
+       <p>By <a href="#" target="_blank">kittipanP</a></p>
     </div>
 </footer>
