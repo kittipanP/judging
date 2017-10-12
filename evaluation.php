@@ -157,6 +157,7 @@ mysqli_close($MyConnect);
   <title>jQuery | Custom Radio Buttons Survey</title>
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
 
 
@@ -165,7 +166,7 @@ mysqli_close($MyConnect);
   
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   
-      <link rel="stylesheet" href="css/style.css?v=980112"> 
+      <link rel="stylesheet" href="css/style.css?v=1234"> 
 
       <link rel="stylesheet" href="css/style-msform.css"> 
 
@@ -181,23 +182,59 @@ text-decoration:none;
 }
 //--></STYLE>
 
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+}
+</style>
+
+
+<!--footer-->
+<style type="text/css">
+html, body { 
+   height: 100%; /* ให้ html และ body สูงเต็มจอภาพไว้ก่อน */
+   margin: 0;
+   padding: 0;
+}
+.wrapper {
+   display: block;
+   min-height: 100%; /* real browsers */
+   height: auto !important; /* real browsers */
+   height: 100%; /* IE6 bug */
+   margin-bottom: -20px; /* กำหนด margin-bottom ให้ติดลบเท่ากับความสูงของ footer */
+}
+.footer {
+   height: 20px; /* ความสูงของ footer */
+   display: block;
+   text-align: center;
+}
+</style>
+
+
 <body>
 
 
         <?php 
             require_once 'web_element/nav-top.php';
         ?>
+        <br>
+        <br>
         
 
-
+<div class="w3-container">
     <form action="<?php echo $editFormAction; ?>" method="post" name="form1" id="msform" enctype="multipart/form-data">    
 
 
           <div class="rb-box">
+<br>
+<br>
 
           <input type="hidden" name="com_id" value="" size="32" /><br>
           <div align="left">
-              <label for="titleSelect"> Committee's Name : </label>
+              <label class="w3-text-white" for="titleSelect"> Committee's Name : </label>
           </div>
           <input type="text" name="com_name" value="" size="32" />
 
@@ -214,35 +251,36 @@ text-decoration:none;
           <!-- Radio Button Module -->
 
           <div align="left"><br>
-          <p><B>1. Problem Definition </B>: Does the team have a clear and deep understanding of the problem? Do they understand the environment that surrounds the problem? 
-        (Make it Happen)
-         </p></div>
+            <h2 class="w3-text-green" style="text-shadow:1px 1px 0 #e2c0c0">Make it Happen</h2>
+          <h3><B>1. Problem Definition </B>: Does the team have a clear and deep understanding of the problem? Do they understand the environment that surrounds the problem? 
+        
+         </h3></div>
           <div id="rb-1" class="rb">
 
             <div class="rb-tab">
               <div class="rb-spot">
                     <input class="rb-tab rb-spot rb-txt" id="option1" name="com_evai" type="radio" value="1">
-                    <label for="option1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1</label>
+                    <label for="option1"><h3>1</h3></label>
               </div>
             </div><div class="rb-tab" data-value="2">
               <div class="rb-spot">
                     <input class="rb-tab rb-spot rb-txt" id="option1" name="com_evai" type="radio" value="2">
-                    <label for="option1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2</label>
+                    <label for="option1"><h3>2</h3></label>
               </div>
             </div><div class="rb-tab" data-value="3">
               <div class="rb-spot">
                     <input class="rb-tab rb-spot rb-txt" id="option1" name="com_evai" type="radio" value="3">
-                    <label for="option1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3</label>
+                    <label for="option1"><h3>3</h3></label>
               </div>
             </div><div class="rb-tab" data-value="4">
               <div class="rb-spot">
                     <input class="rb-tab rb-spot rb-txt" id="option1" name="com_evai" type="radio" value="4">
-                    <label for="option1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4</label>
+                    <label for="option1"><h3>4</h3></label>
               </div>
             </div><div class="rb-tab" data-value="5">
               <div class="rb-spot">
                     <input class="rb-tab rb-spot rb-txt" id="option1" name="com_evai" type="radio" value="5">
-                    <label for="option1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5</label>
+                    <label for="option1"><h3>5</h3></label>
               </div>
             </div>
             
@@ -251,36 +289,37 @@ text-decoration:none;
           <!-- Radio Button Module -->
 
           <div align="left"><br>
-          <p>2. Innovation: Has the team clearly defined a solution, supporting customers? Is their solution distinctive or fundamentally different from existing approaches? Could their solution viably be implemented and sustained in the real world? 
-        (Think Big)
-        </p></div>
+            <h2 class="w3-text-teal" style="text-shadow:1px 1px 0 #444">Think Big</h2>
+          <h3>2. Innovation: Has the team clearly defined a solution, supporting customers? Is their solution distinctive or fundamentally different from existing approaches? Could their solution viably be implemented and sustained in the real world? 
+        
+        </h3></div>
           <div id="rb-2" class="rb">
 
 
             <div class="rb-tab">
               <div class="rb-spot">
                     <input class="rb-tab rb-spot rb-txt" id="option1" name="com_evaii" type="radio" value="1">
-                    <label for="option1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1</label>
+                    <label for="option1"><h3>1</h3></label>
               </div>
             </div><div class="rb-tab" data-value="2">
               <div class="rb-spot">
                     <input class="rb-tab rb-spot rb-txt" id="option1" name="com_evaii" type="radio" value="2">
-                    <label for="option1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2</label>
+                    <label for="option1"><h3>2</h3></label>
               </div>
             </div><div class="rb-tab" data-value="3">
               <div class="rb-spot">
                     <input class="rb-tab rb-spot rb-txt" id="option1" name="com_evaii" type="radio" value="3">
-                    <label for="option1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3</label>
+                    <label for="option1"><h3>3</h3></label>
               </div>
             </div><div class="rb-tab" data-value="4">
               <div class="rb-spot">
                     <input class="rb-tab rb-spot rb-txt" id="option1" name="com_evaii" type="radio" value="4">
-                    <label for="option1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4</label>
+                    <label for="option1"><h3>4</h3></label>
               </div>
             </div><div class="rb-tab" data-value="5">
               <div class="rb-spot">
                     <input class="rb-tab rb-spot rb-txt" id="option1" name="com_evaii" type="radio" value="5">
-                    <label for="option1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5</label>
+                    <label for="option1"><h3>5</h3></label>
               </div>
             </div>
 
@@ -290,36 +329,37 @@ text-decoration:none;
           <!-- Radio Button Module -->
 
           <div align="left"><br>
-          <p>3. Sustainability: Has the team developed a plan for the sustainability of their innovation? (For this competition, sustainability means the ability to continually generate benefit to sustain the operations of the team's innovation.)
-        (Make it Happen)
-        </p></div>
+            <h2 class="w3-text-green" style="text-shadow:1px 1px 0 #444">Make it Happen</h2>
+          <h3>3. Sustainability: Has the team developed a plan for the sustainability of their innovation? (For this competition, sustainability means the ability to continually generate benefit to sustain the operations of the team's innovation.)
+        
+        </h3></div>
           <div id="rb-3" class="rb">
 
 
             <div class="rb-tab">
               <div class="rb-spot">
                     <input class="rb-tab rb-spot rb-txt" id="option1" name="com_evaiii" type="radio" value="1">
-                    <label for="option1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1</label>
+                    <label for="option1"><h3>1</h3></label>
               </div>
             </div><div class="rb-tab" data-value="2">
               <div class="rb-spot">
                     <input class="rb-tab rb-spot rb-txt" id="option1" name="com_evaiii" type="radio" value="2">
-                    <label for="option1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2</label>
+                    <label for="option1"><h3>2</h3></label>
               </div>
             </div><div class="rb-tab" data-value="3">
               <div class="rb-spot">
                     <input class="rb-tab rb-spot rb-txt" id="option1" name="com_evaiii" type="radio" value="3">
-                    <label for="option1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3</label>
+                    <label for="option1"><h3>3</h3></label>
               </div>
             </div><div class="rb-tab" data-value="4">
               <div class="rb-spot">
                     <input class="rb-tab rb-spot rb-txt" id="option1" name="com_evaiii" type="radio" value="4">
-                    <label for="option1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4</label>
+                    <label for="option1"><h3>4</h3></label>
               </div>
             </div><div class="rb-tab" data-value="5">
               <div class="rb-spot">
                     <input class="rb-tab rb-spot rb-txt" id="option1" name="com_evaiii" type="radio" value="5">
-                    <label for="option1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5</label>
+                    <label for="option1"><h3>5</h3></label>
               </div>
             </div>
 
@@ -329,36 +369,37 @@ text-decoration:none;
           <!-- Radio Button Module -->
 
           <div align="left"><br>
-          <p>4. The Team: Does the team include the diversity of expertise necessary to accomplish their goals? Does the team comprise the right people to do the job? Was the presentation professional and well-practiced, to stakeholders? 
-        (Do it Together)
-        </p></div>
+            <h2 class="w3-text-orange" style="text-shadow:1px 1px 0 #444">Do it Together</h2>
+          <h3>4. The Team: Does the team include the diversity of expertise necessary to accomplish their goals? Does the team comprise the right people to do the job? Was the presentation professional and well-practiced, to stakeholders? 
+        
+        </h3></div>
           <div id="rb-4" class="rb">
 
 
             <div class="rb-tab">
               <div class="rb-spot">
                     <input class="rb-tab rb-spot rb-txt" id="option1" name="com_evaiv" type="radio" value="1">
-                    <label for="option1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1</label>
+                    <label for="option1"><h3>1</h3></label>
               </div>
             </div><div class="rb-tab" data-value="2">
               <div class="rb-spot">
                     <input class="rb-tab rb-spot rb-txt" id="option1" name="com_evaiv" type="radio" value="2">
-                    <label for="option1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2</label>
+                    <label for="option1"><h3>2</h3></label>
               </div>
             </div><div class="rb-tab" data-value="3">
               <div class="rb-spot">
                     <input class="rb-tab rb-spot rb-txt" id="option1" name="com_evaiv" type="radio" value="3">
-                    <label for="option1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3</label>
+                    <label for="option1"><h3>3</h3></label>
               </div>
             </div><div class="rb-tab" data-value="4">
               <div class="rb-spot">
                     <input class="rb-tab rb-spot rb-txt" id="option1" name="com_evaiv" type="radio" value="4">
-                    <label for="option1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4</label>
+                    <label for="option1"><h3>4</h3></label>
               </div>
             </div><div class="rb-tab" data-value="5">
               <div class="rb-spot">
                     <input class="rb-tab rb-spot rb-txt" id="option1" name="com_evaiv" type="radio" value="5">
-                    <label for="option1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5</label>
+                    <label for="option1"><h3>5</h3></label>
               </div>
             </div>
 
@@ -368,7 +409,7 @@ text-decoration:none;
 
           <div align="left">
             <br>
-              <label for="comment"> Comment : </label>
+              <label class="w3-text-white" for="comment"><h3> Comment : </h3></label>
           </div>
           <textarea type="text" name="com_comment" value="" size="32"></textarea> 
 
@@ -385,9 +426,23 @@ text-decoration:none;
     </form>
 
 
+<br>
+<br>
+
+
 
 
 </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
 
     <script >
@@ -425,7 +480,10 @@ function debug(){
 };
       
 
-    </script>  
+    </script>
+
+
+
 
 </body>
 </html>

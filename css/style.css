@@ -4,7 +4,6 @@ html, body {
 }
 
 body {
-  font-family: sans-serif;
   /*background: #42426b; */
   background-image: -webkit-linear-gradient(135deg, #8067B7, #5f585c); 
   background-image: linear-gradient(-45deg, #8067B7, #5f585c); 
@@ -12,12 +11,12 @@ body {
 }
 
 .rb-box {
-  width: 80%;
-  max-width: 420px;
+  /*width: 80%;
+  max-width: 420px; */
   margin: 50px auto;
   padding: 1.3em;
-  background: #292942;
-  border-radius: .75em;
+  background: #000000;
+  border-radius: .12em;
   -webkit-filter: drop-shadow(1px 2px 5px rgba(0,0,0,.3));
   filter: drop-shadow(1px 2px 5px rgba(0,0,0,.3));
   box-shadow: 
@@ -31,11 +30,11 @@ body {
 
 /* Custom Radio Button */
 p {
-  font-size: .9em;
+  font-size: 1.5em;
 }
 
 .rb {
-  padding: 16px 0;
+  padding: 40px 0;
   text-align: center;
   background: rgba(255,255,255,.03);
   border-radius: .3em;
@@ -58,13 +57,13 @@ p {
 
 .rb-spot {
   position: absolute;
-  width: 18px;
-  height: 18px;
+  width: 20px;
+  height: 20px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   background: transparent;
-  border: 2px solid rgba(255,255,255,.3);
+  border: 10px solid rgba(255,255,255,.3);
   border-radius: 100%;
   cursor: pointer;
   transition: ease .5s;
