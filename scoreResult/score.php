@@ -215,6 +215,28 @@ body, html {
 
 </style>
 
+<!--footer-->
+<style type="text/css">
+html, body { 
+   height: 100%; /* ให้ html และ body สูงเต็มจอภาพไว้ก่อน */
+   margin: 0;
+   padding: 0;
+}
+.wrapper {
+   display: block;
+   min-height: 100%; /* real browsers */
+   height: auto !important; /* real browsers */
+   height: 100%; /* IE6 bug */
+   margin-bottom: -20px; /* กำหนด margin-bottom ให้ติดลบเท่ากับความสูงของ footer */
+}
+.footer {
+   height: 20px; /* ความสูงของ footer */
+   display: block;
+   text-align: center;
+}
+</style>
+
+
 
 <body>
 
@@ -476,11 +498,11 @@ body, html {
 <br> 
 
 <footer class = "footer">
-    <div class="w3-container w3-theme-d3 w3-padding-16 ">
+    <!--<div class="w3-container w3-theme-d3 w3-padding-16 ">
     <h5>Footer</h5>
-    </div>
-    <div class="w3-container w3-theme-d5  " >
-       <p>By <a href="#" target="_blank">kittipanP</a></p>
+    </div>-->
+    <div class="w3-container w3-theme-d5  " > 
+       <p>Created by <a href="#" target="_blank">kittipanP</a></p>
     </div>
 </footer>
 

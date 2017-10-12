@@ -89,6 +89,27 @@ text-decoration:none;
 }
 </style>
 
+<!--footer-->
+<style type="text/css">
+html, body { 
+   height: 100%; /* ให้ html และ body สูงเต็มจอภาพไว้ก่อน */
+   margin: 0;
+   padding: 0;
+}
+.wrapper {
+   display: block;
+   min-height: 100%; /* real browsers */
+   height: auto !important; /* real browsers */
+   height: 100%; /* IE6 bug */
+   margin-bottom: -20px; /* กำหนด margin-bottom ให้ติดลบเท่ากับความสูงของ footer */
+}
+.footer {
+   height: 20px; /* ความสูงของ footer */
+   display: block;
+   text-align: center;
+}
+</style>
+
 <body>
 
 
@@ -121,8 +142,8 @@ text-decoration:none;
                                     <img src="img/images/1.png" class="w3-hover-opacity" style="width:100%">
                                       <div class="w3-display-middle w3-display-hover"> 
                                         <div class="w3-panel w3-orange w3-card-2 ">
-                                          <a href="projectAdv.php" class = "textdecoration">
-                                            <p>Engineering</p>
+                                          <a href="projectAdv.php" class = "textdecoration w3-center">
+                                            <p>Technician, Staff and Engineer</p>
                                             </a>
                                         </div>
                                       </div>
@@ -223,6 +244,7 @@ text-decoration:none;
 </div>
 </div>
 </div>
+
 <br>
 <br>
 <br>
