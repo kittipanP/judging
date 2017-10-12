@@ -165,7 +165,9 @@ mysqli_close($MyConnect);
   
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   
-      <link rel="stylesheet" href="css/style.css?v=9801"> 
+      <link rel="stylesheet" href="css/style.css?v=980112"> 
+
+      <link rel="stylesheet" href="css/style-msform.css"> 
 
   
 </head>
@@ -188,7 +190,7 @@ text-decoration:none;
         
 
 
-    <form action="<?php echo $editFormAction; ?>" method="post" name="form1" id="fullform" enctype="multipart/form-data">    
+    <form action="<?php echo $editFormAction; ?>" method="post" name="form1" id="msform" enctype="multipart/form-data">    
 
 
           <div class="rb-box">
@@ -197,8 +199,6 @@ text-decoration:none;
           <div align="left">
               <label for="titleSelect"> Committee's Name : </label>
           </div>
-
-
           <input type="text" name="com_name" value="" size="32" />
 
 
@@ -212,9 +212,11 @@ text-decoration:none;
 
 
           <!-- Radio Button Module -->
+
+          <div align="left"><br>
           <p><B>1. Problem Definition </B>: Does the team have a clear and deep understanding of the problem? Do they understand the environment that surrounds the problem? 
         (Make it Happen)
-         </p>
+         </p></div>
           <div id="rb-1" class="rb">
 
             <div class="rb-tab">
@@ -247,9 +249,11 @@ text-decoration:none;
           </div>
 
           <!-- Radio Button Module -->
+
+          <div align="left"><br>
           <p>2. Innovation: Has the team clearly defined a solution, supporting customers? Is their solution distinctive or fundamentally different from existing approaches? Could their solution viably be implemented and sustained in the real world? 
         (Think Big)
-        </p>
+        </p></div>
           <div id="rb-2" class="rb">
 
 
@@ -284,9 +288,11 @@ text-decoration:none;
           </div>
 
           <!-- Radio Button Module -->
+
+          <div align="left"><br>
           <p>3. Sustainability: Has the team developed a plan for the sustainability of their innovation? (For this competition, sustainability means the ability to continually generate benefit to sustain the operations of the team's innovation.)
         (Make it Happen)
-        </p>
+        </p></div>
           <div id="rb-3" class="rb">
 
 
@@ -321,9 +327,11 @@ text-decoration:none;
           </div>
 
           <!-- Radio Button Module -->
+
+          <div align="left"><br>
           <p>4. The Team: Does the team include the diversity of expertise necessary to accomplish their goals? Does the team comprise the right people to do the job? Was the presentation professional and well-practiced, to stakeholders? 
         (Do it Together)
-        </p>
+        </p></div>
           <div id="rb-4" class="rb">
 
 
@@ -359,6 +367,7 @@ text-decoration:none;
 
 
           <div align="left">
+            <br>
               <label for="comment"> Comment : </label>
           </div>
           <textarea type="text" name="com_comment" value="" size="32"></textarea> 
@@ -371,7 +380,7 @@ text-decoration:none;
 
         <button type="submit" name="submit" class="action-button button trigger" value="Submit" >Submit!</button>
   </div>
-        <input type="hidden" name="MM_insert" class="submit action-button" value="fullform" />
+        <input type="hidden" name="MM_insert" class="submit action-button" value="msform" />
         <input type="hidden" name="MM_insert" value="form1" />
     </form>
 

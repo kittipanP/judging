@@ -75,13 +75,15 @@ text-decoration:none;
         
 <!-- Header -->
 <header class="w3-display-container w3-content w3-center" style="max-width:1500px">
-  <img class="w3-image" src="img/images/photographer.jpg" alt="Me" width="1500" height="600">
+  <img class="w3-image" src="img/bg/inno.jpg" alt="Me" stywidth="1500" height="600">
+<!--
   <div class="w3-display-middle w3-padding-large w3-border w3-wide w3-text-light-grey w3-center">
     <h1 class="w3-hide-medium w3-hide-small w3-xxxlarge">Innovation Bazaar</h1>
     <h5 class="w3-hide-large" style="white-space:nowrap">Innovation Bazaar</h5>
     <h3 class="w3-hide-medium w3-hide-small">Advance Process Technology</h3>
   </div>
-  
+-->
+
   <!-- Navbar (placed at the bottom of the header image) -->
   <div class="w3-bar w3-light-grey w3-round w3-display-bottommiddle w3-hide-small" style="bottom:-16px">
     <a href="index.php" class="w3-bar-item w3-button">Home</a>
@@ -101,7 +103,7 @@ text-decoration:none;
 
 <div class="w3-container w3-content" style="max-width:1400px;margin-top:80px">
         <div class="w3-container w3-card-2 w3-white w3-round w3-margin" id="onProcess">
-                      <h2>Advance Process Technology</h2>
+                      <h2>Operation/Yield/People [DL and Technician]</h2>
                       <p>Plesas Click the project for giving your judging</p>
                     
                     
