@@ -165,7 +165,7 @@ mysqli_close($MyConnect);
   
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   
-      <link rel="stylesheet" href="css/style.css?v=9801"> 
+      <link rel="stylesheet" href="css/style.css?v=980112"> 
 
       <link rel="stylesheet" href="css/style-msform.css"> 
 
