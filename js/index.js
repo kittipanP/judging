@@ -41,7 +41,7 @@ $(".trigger").click(function(){
 function debug(){
   var debug = "";
   for (i=0; i<survey.length; i++) {
-    debug += "Nº " + survey[i][0] + " = " + survey[i][1] + "\n";
+    debug += "Score No " + survey[i][0] + " = " + survey[i][1] + "\n";
   };
   alert(debug);
 };
