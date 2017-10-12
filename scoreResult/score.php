@@ -209,7 +209,8 @@ body, html {
     color: #0000;
     line-height: 1.8;
 
-  background: url(../img/bg/bgi.jpg); 
+  /*background: url(../img/bg/bgi.jpg); */
+
 }
 
 </style>
@@ -405,9 +406,46 @@ body, html {
 <div class="container-fluid">
   <div class="row text-center" style="overflow:hidden;">
 
+<div class="w3-row">
+  <div class="w3-third w3-center  " >
+          <div class="w3-row " >
+            <div class="w3-center w3-col.s12 w3-amber w3-hover-light-grey w3-hide-small" style="bottom:100%;opacity:0.5;width:100%">
+              <p>&nbsp;</p>
+            </div>
+            
+          </div>
+  </div>
+  <div class="w3-third w3-center">
+          <div class="w3-row ">
+            <div class="w3-half">
+              <div class="w3-blue w3-hover-light-grey w3-hide-small" style="bottom:100%;opacity:0.5;width:100%">
+                <p>&nbsp; </p>
+              </div>
+            </div>
+            <div class="w3-half ">
+              <div class="w3-purple w3-hover-light-grey w3-hide-small" style="bottom:100%;opacity:0.5;width:100%">
+                <p>&nbsp;</p>
+              </div>
+              </div>
+          </div>
+  </div>
+  <div class="w3-third w3-center"> 
+          <div class="w3-row ">
+            <div class="w3-half">
+              <div class="w3-grey w3-hover-light-grey w3-hide-small" style="bottom:100%;opacity:0.5;width:100%">
+                <p>&nbsp;</p>
+              </div>
+            </div>
+            <div class="w3-half ">
+              <div class="w3-black w3-hover-light-grey w3-hide-small" style="bottom:100%;opacity:0.5;width:100%">
+                <p>&nbsp;</p>
+            </div>
+            </div>
+          </div>
+  </div>
+</div>
+</div>
 
-<br>
-<br>
     <div class="col-sm-3" style="float: none !important;display: inline-block;">
       <label class="text-left">&nbsp;&nbsp;&nbsp;&nbsp;Top Radius:&nbsp;&nbsp;&nbsp;&nbsp;</label>
       <input class="chart-input" data-property="topRadius" type="range" min="0" max="1.5" value="1" step="0.01" />
@@ -424,6 +462,13 @@ body, html {
     </div>
   </div>
 </div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 
 </div>
