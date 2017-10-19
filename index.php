@@ -119,11 +119,14 @@ html, body {
 
 
 <!-- First Parallax Image with Logo Text -->
+<!--171019 
 <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
   <div class="w3-display-middle" style="white-space:nowrap;">
     <a href="#main-menu" ><button class="button w3-center w3-padding-large w3-orange w3-xlarge w3-wide w3-animate-opacity">Innovation <span class="w3-hide-small">Compatition</span> Judging</button></a>
   </div>
 </div>
+
+-->
 
 <div class="w3-container w3-center">
   <br>

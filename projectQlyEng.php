@@ -98,12 +98,12 @@ html, body {
         
 <!-- Header -->
 <header class="w3-display-container w3-content w3-center" style="max-width:1500px">
-  <img class="w3-image" src="img/images//2-1.png" alt="Me" width="1500" height="600">
-  <div class="w3-display-middle w3-padding-large w3-border w3-wide w3-text-light-grey w3-center">
+  <img class="w3-image" src="img/bg/inno.jpg" alt="Me" stywidth="1500" height="600">
+  <!--<div class="w3-display-middle w3-padding-large w3-border w3-wide w3-text-light-grey w3-center">
     <h1 class="w3-hide-medium w3-hide-small w3-xxxlarge">Innovation Bazaar</h1>
     <h5 class="w3-hide-large" style="white-space:nowrap">Innovation Bazaar</h5>
     <h3 class="w3-hide-medium w3-hide-small">Advance Process Technology</h3>
-  </div>
+  </div>-->
   
   <!-- Navbar (placed at the bottom of the header image) -->
   <div class="w3-bar w3-light-grey w3-round w3-display-bottommiddle w3-hide-small" style="bottom:-16px">
