@@ -210,7 +210,7 @@ html, body {
                             <div class="w3-display-container ">
                                 <div class="" style="min-height:">
                                   <a href="projectOpsEng.php" class = "textdecoration">
-                                    <img src="img/images/3-1.png" class="w3-hover-opacity" style="width:100%">
+                                    <img src="img/images/3-11.png" class="w3-hover-opacity" style="width:100%">
 
                                   <div class="w3-display-topright w3-display-hover"> 
                                     <div class="w3-panel w3-blue-grey w3-card-4 " >

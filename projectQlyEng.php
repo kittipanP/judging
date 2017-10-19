@@ -125,7 +125,7 @@ html, body {
 <div class="w3-container w3-content" style="max-width:1400px;margin-top:80px">
         <div class="w3-container w3-card-2 w3-white w3-round w3-margin" id="onProcess">
                       <h2>Quality [Engineer]  </h2>
-                      <p>Plesas Click the project for giving your judging</p>
+                      <p>Please Click the project for giving your judging</p>
                     
                     
                     <table class="w3-table-all w3-margin-top w3-hoverable" id="onProcessiiTable">
