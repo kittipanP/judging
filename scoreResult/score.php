@@ -534,7 +534,7 @@ html, body {
 
   <script src='https://code.jquery.com/jquery-1.11.2.min.js'></script>
 
-    <script  src="js/index.js?v=22"></script>
+    <script  src="js/index.js?v=1019"></script>
 
 
 </body>

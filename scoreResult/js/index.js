@@ -10,19 +10,19 @@ var chart = AmCharts.makeChart("chartdiv", {
     "visits": result_advHHDii,
     "color": "#FF6600"
   }, {
-    "country": "team THO 1",
+    "country": "<br><br>team THO 1",
     "visits": result_advTHOi,
     "color": "#FF9E01"
   }, {
-    "country": "<br>team THO 2",
+    "country": "team THO 2",
     "visits": result_advTHOii,
     "color": "#FCD202"
   }, {
-    "country": "team PRB 1",
+    "country": "<br>team PRB 1",
     "visits": result_advPRBi,
     "color": "#F8FF01"
   }, {
-    "country": "<br>team PRB 2",
+    "country": "<br><br>team PRB 2",
     "visits": result_advPRBii,
     "color": "#B0DE09"
   }, {
@@ -34,19 +34,19 @@ var chart = AmCharts.makeChart("chartdiv", {
     "visits": result_QualityEngTHO,
     "color": "#0D8ECF"
   }, {
-    "country": "Quality [Eng] PRB",
+    "country": "<br><br>Quality [Eng] PRB",
     "visits": result_QualityEngPRB,
     "color": "#0D52D1"
   }, {
-    "country": "<br>Quality [DL/Tech] HDD",
+    "country": "Quality [DL/Tech] HDD",
     "visits": QualityDLTechHDD,
     "color": "#2A0CD0"
   }, {
-    "country": "Quality [DL/Tech]THO",
+    "country": "<br>Quality [DL/Tech]THO",
     "visits": QualityDLTechTHO,
     "color": "#8A0CCF"
   }, {
-    "country": "<br>Quality [DL/Tech]PRB",
+    "country": "<br><br>Quality [DL/Tech]PRB",
     "visits": QualityDLTechPRB,
     "color": "#CD0D74"
   }, {
@@ -58,19 +58,19 @@ var chart = AmCharts.makeChart("chartdiv", {
     "visits": result_OpsEngTHO,
     "color": "#DDDDDD"
   }, {
-    "country": "Ops [Eng]PRB",
+    "country": "<br><br>Ops [Eng]PRB",
     "visits": result_OpsEngPRB,
     "color": "#999999"
   }, {
-    "country": "<br>Ops [DL/Tech]HDD",
+    "country": "Ops [DL/Tech]HDD",
     "visits": result_OpsDLTechHDD,
     "color": "#333333"
   }, {
-    "country": "Ops [DL/Tech]THO",
+    "country": "<br>Ops [DL/Tech]THO",
     "visits": result_OpsDLTechTHO,
     "color": "#000000"
   }, {
-    "country": "<br>Ops [DL/Tech]PRB",
+    "country": "<br><br>Ops [DL/Tech]PRB",
     "visits": result_OpsDLTechPRB,
     "color": "#000000"
   }],
