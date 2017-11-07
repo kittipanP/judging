@@ -1,4 +1,7 @@
 
+<?php
+  include 'login/session.php';
+?>
 <?php require_once('Connections/MyConnect.php'); ?>
 
 <?php
@@ -45,7 +48,6 @@
 
 
 ?>
-
 <!DOCTYPE html>
 <html>
 <title>Judging</title>
