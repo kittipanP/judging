@@ -1,3 +1,6 @@
+<?php
+  include 'login/session.php';
+?>
 <!DOCTYPE html>
 <html>
 <title>Judging</title>
@@ -129,9 +132,13 @@ html, body {
 -->
 
 <div class="w3-container w3-center">
+
+
+  <hr>
   <br>
   <br>
   <br>
+
   <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>Areas</b></span> <span class="w3-text-grey">of Competitions</span></h1><hr>
 </div>
 
