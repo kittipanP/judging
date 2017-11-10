@@ -1,0 +1,18 @@
+INSERT INTO `committee` (`com_id`, `com_evai`, `com_evaii`, `com_evaiii`, `com_evaiv`, `com_evav`, `com_evavi`, `com_evavii`, `com_comment`, `fkcon_id`, `judger`) 
+VALUES (NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '3', '2'), 
+(NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '4', '2'), 
+(NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '5', '2'), 
+(NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '6', '2'), 
+(NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '7', '2'), 
+(NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '8', '2'), 
+(NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '9', '2'), 
+(NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '10', '2'), 
+(NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '11', '2'), 
+(NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '12', '2'), 
+(NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '13', '2'), 
+(NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '14', '2'), 
+(NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '15', '2'), 
+(NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '16', '2'), 
+(NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '17', '2'), 
+(NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '18', '2'), 
+(NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '1', '3');
