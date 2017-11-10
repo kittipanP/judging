@@ -180,7 +180,7 @@ html, body {
                                       +$row_studentSet['com_evavi']
                                       +$row_studentSet['com_evavii']; ?></td>
                               <!--<td><?php echo $row_studentSet['con_name']; ?></td> -->
-                              <td><a class="w3-button w3-grey w3-round-large w3-hover-blue" href="evaluation.php?con_id=<?php echo $row_studentSet['con_id']; ?>"><i class="fa fa-pencil"></i></a></td>
+                              <td><a class="w3-button w3-grey w3-round-large w3-hover-blue" href="evaOpsEng.php?con_id=<?php echo $row_studentSet['con_id']; ?>"><i class="fa fa-pencil"></i></a></td>
                               <!--
                               <a class="btn btn-sm btn-danger" id="delete_product" data-id="<?php echo $product_id; ?>" href="javascript:void(0)"><i class="glyphicon glyphicon-trash"></i></a>
                               -->
