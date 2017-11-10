@@ -5,6 +5,8 @@
 <?php require_once('Connections/MyConnect.php'); ?>
 
 <?php
+
+    $judger = $_SESSION['login_id'];
     $maxRows_studentSet_all = 18;
     $pageNum_studentSet_all = 0;
     if (isset($_GET['pageNum_studentSet_all'])) {
@@ -15,7 +17,8 @@
     mysqli_select_db($MyConnect, $database_MyConnect);
       $query_studentSet_all = "SELECT * FROM contestant
       INNER JOIN type_contest ON type_contest.typ_id = contestant.type_contest_typ_id
-      WHERE contestant.type_contest_typ_id = 1
+      INNER JOIN committee ON committee.fkcon_id = contestant.con_id
+      WHERE (contestant.type_contest_typ_id = 1) AND (committee.judger = $judger)
       ORDER BY contestant.con_id DESC";
     $query_limit_studentSet_all = sprintf("%s LIMIT %d, %d", $query_studentSet_all, $startRow_studentSet_all, $maxRows_studentSet_all);
     $studentSet_all = mysqli_query($MyConnect, $query_limit_studentSet_all) or die(mysqli_error($MyConnect));
@@ -126,20 +129,20 @@ html, body {
 
 
 
-<div class="w3-container w3-content" style="max-width:1400px;margin-top:80px">
+<div class="w3-container w3-content" style="max-width:1000px;margin-top:80px">
         <div class="w3-container w3-card-2 w3-white w3-round w3-margin" id="onProcess">
                       <h2>Advance Process Technology [Technician, Staff and Engineer]</h2>
                       <p>Please Click the project for giving your judging</p>
                     
                     
-                    <table class="w3-table-all w3-margin-top w3-hoverable" id="onProcessiiTable">
+                    <table class="w3-table-all w3-margin-top w3-hoverable " id="onProcessiiTable" >
                         <tr>
                           
                           <th style="width:5%;">No.</th>
                           <th style="width:25%;">Poster</th>
-                          <th style="width:50%;">Project Name</th>
-                          <th style="width:15%;">Team Name</th>
-                          <th style="width:5%;">Site</th>
+                          <th style="width:50%;">Your Judge</th>
+                          <!--<th style="width:15%;">Score Result</th> -->
+                          <th style="width:5%;">Judge</th>
                         </tr>
                         <?php 
                         $rows_all = $totalRows_studentSet_onProcess;
@@ -169,9 +172,15 @@ html, body {
                               	
 
                               </td>
-                              <td><a href="evaluation.php?con_id=<?php echo $row_studentSet['con_id']; ?>" ><?php echo $row_studentSet['con_project']; ?></td>
-                              <td><?php echo $row_studentSet['con_name']; ?></td>
-                              <td><?php echo $row_studentSet['con_site']; ?></td>
+                              <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $row_studentSet['com_evai']
+                                      +$row_studentSet['com_evaii']
+                                      +$row_studentSet['com_evaiii']
+                                      +$row_studentSet['com_evaiv']
+                                      +$row_studentSet['com_evav']
+                                      +$row_studentSet['com_evavi']
+                                      +$row_studentSet['com_evavii']; ?></td>
+                              <!--<td><?php echo $row_studentSet['con_name']; ?></td> -->
+                              <td><a class="w3-button w3-grey w3-round-large w3-hover-blue" href="evaAdv.php?con_id=<?php echo $row_studentSet['con_id']; ?>"><i class="fa fa-pencil"></i></a></td>
                               <!--
                               <a class="btn btn-sm btn-danger" id="delete_product" data-id="<?php echo $product_id; ?>" href="javascript:void(0)"><i class="glyphicon glyphicon-trash"></i></a>
                               -->
