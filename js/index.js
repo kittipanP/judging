@@ -40,8 +40,9 @@ $(".trigger").click(function(){
 //Debug:
 function debug(){
   var debug = "";
-  for (i=0; i<survey.length; i++) {
-    debug += "Score No " + survey[i][0] + " = " + survey[i][1] + "\n";
+  var i =0
+  if (i=0) {
+    debug = "Score No " ;
   };
   alert(debug);
 };
