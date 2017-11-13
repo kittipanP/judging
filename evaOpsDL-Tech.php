@@ -123,7 +123,7 @@ mysqli_close($MyConnect);
   <meta charset="UTF-8">
   <title>Thailand Innovation Bazaar</title>
 
-<link rel="icon" type="image/png" href="img/images/westernDigital.jpg"/>
+<link rel="icon" type="image/png" href="img/icon/westernDigital.jpg"/>
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
