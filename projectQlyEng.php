@@ -172,13 +172,14 @@ html, body {
                                 
 
                               </td>
-                              <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $row_studentSet['com_evai']
+                              <?php $eva_result = $row_studentSet['com_evai']
                                       +$row_studentSet['com_evaii']
                                       +$row_studentSet['com_evaiii']
                                       +$row_studentSet['com_evaiv']
                                       +$row_studentSet['com_evav']
                                       +$row_studentSet['com_evavi']
-                                      +$row_studentSet['com_evavii']; ?></td>
+                                      +$row_studentSet['com_evavii']; ?>
+                              <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php if($eva_result==NULL){ echo "N/A";}else{ echo $eva_result;} ?></td>
                               <!--<td><?php echo $row_studentSet['con_name']; ?></td> -->
                               <td><a class="w3-button w3-grey w3-round-large w3-hover-blue" href="evaQlyEng.php?con_id=<?php echo $row_studentSet['con_id']; ?>"><i class="fa fa-pencil"></i></a></td>
                               <!--
