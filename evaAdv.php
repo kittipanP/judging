@@ -387,12 +387,6 @@ body, html {
 
 </div>
 </div>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
 
 
 
@@ -404,6 +398,10 @@ body, html {
 
   
 
+<?php 
+    //Footer
+    require_once 'web_element/footer.php'; 
+?> 
 
 </body>
 </html>
