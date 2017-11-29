@@ -1,7 +1,7 @@
 
 
 <?php
-  include 'login/session.php';
+  include 'logon/session.php';
 ?>
 
 <?php require_once('Connections/MyConnect.php'); ?>
