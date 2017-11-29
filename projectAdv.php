@@ -19,7 +19,7 @@
       INNER JOIN type_contest ON type_contest.typ_id = contestant.type_contest_typ_id
       INNER JOIN committee ON committee.fkcon_id = contestant.con_id
       WHERE (contestant.type_contest_typ_id = 1) AND (committee.judger = $judger)
-      ORDER BY contestant.con_id DESC";
+      ORDER BY contestant.con_id ";
     $query_limit_studentSet_all = sprintf("%s LIMIT %d, %d", $query_studentSet_all, $startRow_studentSet_all, $maxRows_studentSet_all);
     $studentSet_all = mysqli_query($MyConnect, $query_limit_studentSet_all) or die(mysqli_error($MyConnect));
     $row_studentSet = mysqli_fetch_assoc($studentSet_all);
@@ -164,7 +164,7 @@ html, body {
                                   } 
                           
                               ?>
-                              <td><?php echo $b; ?></td>
+                              <td><?php echo $row_studentSet['con_id']; ?></td>
                               <td>
 
                   <img src="img/poster/<?php echo $row_studentSet['con_poster']; ?>" style="width:50px;cursor:pointer" 
