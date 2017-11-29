@@ -1,5 +1,5 @@
 <?php
-  include 'login/session.php';
+  include 'logon/session.php';
 ?>
 <!DOCTYPE html>
 <html>
