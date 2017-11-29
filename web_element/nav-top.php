@@ -19,10 +19,10 @@
         </li>
         <!--Account Ask Bon to Help-->
         <li class=" w3-right w3-dropdown-hover w3-theme-d2 ">
-            <h6 class=" w3-hover usernavh6 w3-username" >&nbsp; &nbsp; &nbsp; &nbsp; <a href="scoreResult/score.php" ><img  src="img/icon/stats.png"  width="24" height="24" title="">&nbsp;Score Result</a>&nbsp;</h6>
+            <h6 class=" w3-hover usernavh6 w3-username" >&nbsp; &nbsp; &nbsp; &nbsp; <a href="scoreResult/score.php" ><img  src="img/icon/stats.png"  width="24" height="24" title=""></a></h6>
         </li>
         <li class=" w3-right w3-dropdown-hover w3-theme-d2 ">
-            <h6 class=" w3-hover usernavh6 w3-username" >&nbsp;  &nbsp; &nbsp; &nbsp;  <a href="index.php" class=""><img  src="img/icon/house.png"  width="24" height="24" title="">&nbsp;&nbsp;Home</a> &nbsp; </h6>
+            <h6 class=" w3-hover usernavh6 w3-username" >&nbsp;  &nbsp; &nbsp; &nbsp;  <a href="index.php" class=""><img  src="img/icon/house.png"  width="24" height="24" title=""></a></h6>
             <!--Drop Down Menu for Account-->
         </li>
     </ul>
