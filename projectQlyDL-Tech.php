@@ -182,7 +182,7 @@ html, body {
                                       +$row_studentSet['com_evavii']; ?>
 
                               <?php 
-                              if($s_login_id== '8' ||$s_login_id== '9' || $s_login_id== '10'){
+                              if($s_login_id== '5' ||$s_login_id== '6' || $s_login_id== '7'){
                               ?>
 
                                 <td><?php if($eva_result==NULL){ echo "N/A";}else{ echo $eva_result;} ?></td>
