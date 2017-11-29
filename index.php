@@ -149,7 +149,7 @@ html, body {
                             <div class="w3-display-container ">
                                 <div class="" style="min-height:">
   								  <a href="projectAdv.php" class = "textdecoration">
-                                    <img src="img/images/1.png" class="w3-hover-opacity" style="width:100%">
+                                    <img src="img/images/001.png" class="w3-hover-opacity" style="width:100%">
                                       <div class="w3-display-middle w3-display-hover"> 
                                         <div class="w3-panel w3-orange w3-card-2 ">
                                           <a href="projectAdv.php" class = "textdecoration w3-center">
@@ -162,7 +162,7 @@ html, body {
                             </div>
   <div class="w3-container">
     <div class="w3-center">
-      <p>Advance Process Technology</p>
+      <p>Process Technology</p>
     </div>
   </div>
 </div>

@@ -182,7 +182,7 @@ html, body {
 
 
                               <?php 
-                              if($s_login_id== '5' ||$s_login_id== '6' || $s_login_id== '7'){
+                              if($s_login_id== '1' || $s_login_id== '5' ||$s_login_id== '6' || $s_login_id== '7'){
                               ?>
 
                                 <td><?php if($eva_result==NULL){ echo "N/A";}else{ echo $eva_result;} ?></td>

@@ -286,7 +286,7 @@ html, body {
         </div> <br><br>
         <div class="w3-row">
   <div class="w3-third w3-center">
-    <h5 style="text-shadow:3px 1px 0 #444" >Advance Process Technology</h5> 
+    <h5 style="text-shadow:3px 1px 0 #444" >Process Technology</h5> 
           
   </div>
   <div class="w3-third w3-center">

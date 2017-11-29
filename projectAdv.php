@@ -131,7 +131,7 @@ html, body {
 
 <div class="w3-container w3-content" style="max-width:1000px;margin-top:80px">
         <div class="w3-container w3-card-2 w3-white w3-round w3-margin" id="onProcess">
-                      <h2>Advance Process Technology [Technician, Staff and Engineer]</h2>
+                      <h2>Process Technology [Technician, Staff and Engineer]</h2>
                       <p>Please Click the project for giving your judging</p>
                     
                     
@@ -181,7 +181,7 @@ html, body {
                                       +$row_studentSet['com_evavii']; ?>
 
                               <?php 
-                              if($s_login_id== '2' ||$s_login_id== '3' || $s_login_id== '4'){
+                              if($s_login_id== '1' || $s_login_id== '2' ||$s_login_id== '3' || $s_login_id== '4'){
                               ?>
                                 <td><?php if($eva_result==NULL){ echo "N/A";}else{ echo $eva_result;} ?></td>
                                 <!--<td><?php echo $row_studentSet['con_name']; ?></td> -->
