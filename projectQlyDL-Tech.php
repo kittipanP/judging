@@ -180,12 +180,27 @@ html, body {
                                       +$row_studentSet['com_evav']
                                       +$row_studentSet['com_evavi']
                                       +$row_studentSet['com_evavii']; ?>
-                              <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php if($eva_result==NULL){ echo "N/A";}else{ echo $eva_result;} ?></td>
-                              <!--<td><?php echo $row_studentSet['con_name']; ?></td> -->
-                              <td><a class="w3-button w3-grey w3-round-large w3-hover-blue" href="evaQlyDL-Tech.php?con_id=<?php echo $row_studentSet['con_id']; ?>"><i class="fa fa-pencil"></i></a></td>
-                              <!--
-                              <a class="btn btn-sm btn-danger" id="delete_product" data-id="<?php echo $product_id; ?>" href="javascript:void(0)"><i class="glyphicon glyphicon-trash"></i></a>
-                              -->
+
+                              <?php 
+                              if($s_login_id== '8' ||$s_login_id== '9' || $s_login_id== '10'){
+                              ?>
+
+                                <td><?php if($eva_result==NULL){ echo "N/A";}else{ echo $eva_result;} ?></td>
+                                <!--<td><?php echo $row_studentSet['con_name']; ?></td> -->
+                                <td><a class="w3-button w3-grey w3-round-large w3-hover-blue" href="evaQlyDL-Tech.php?con_id=<?php echo $row_studentSet['con_id']; ?>"><i class="fa fa-pencil"></i></a></td>
+                              <?php
+                              }else{
+                              ?>
+
+                                <td><?php if($eva_result==NULL){ echo "Don't have the right";}else{ echo $eva_result;} ?></td>
+                                <!--<td><?php echo $row_studentSet['con_name']; ?></td> -->
+                                <td><a class="w3-button w3-grey w3-round-large w3-hover-red w3-disabled" ><i class="fa fa-ban"></i></a></td>
+                              <?php
+                              }
+                              ?>
+                                <!--
+                                <a class="btn btn-sm btn-danger" id="delete_product" data-id="<?php echo $product_id; ?>" href="javascript:void(0)"><i class="glyphicon glyphicon-trash"></i></a>
+                                -->
                             </tr>
                         <?php } while ($row_studentSet = mysqli_fetch_assoc($studentSet_all)); ?>               
                     </table>
