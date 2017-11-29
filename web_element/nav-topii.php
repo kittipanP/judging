@@ -10,7 +10,7 @@
             <div class="">
                 <h6 class=" w3-hover usernavh6 w3-username" >&nbsp; &nbsp;  <a href="#" ><img  src="../img/icon/user.png"  width="24" height="24" title="">&nbsp;<?php echo " $s_login_username"; ?></a>&nbsp; &nbsp; &nbsp; &nbsp;</h6>
                 <div class="w3-dropdown-content w3-bar-block w3-border">
-                  <a href="../login/logout.php" class="w3-bar-item w3-button"><img src="../img/icon/logout.png" width="24" height="24" title="">&nbsp; Log Out</a>
+                  <a href="../logon/logout.php" class="w3-bar-item w3-button"><img src="../img/icon/logout.png" width="24" height="24" title="">&nbsp; Log Out</a>
                 </div>
             </div>
 
