@@ -68,7 +68,7 @@ label:before {
 	display: inline-block;
 	height: 30px;
 	width: 30px;
-	background: #59CA59;
+	background: #DCDCDC;
 	border-radius: 50%;
 	z-index: 2;
 	transition: box-shadow .4s ease,
