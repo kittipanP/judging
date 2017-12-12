@@ -116,7 +116,6 @@ mysqli_close($MyConnect);
 
 
 ?>
-
 <!DOCTYPE html>
 <html >
 <head>
@@ -139,7 +138,7 @@ mysqli_close($MyConnect);
       <link rel="stylesheet" href="css/style-msform.css"> 
 
       <!-- radio -->
-      <link rel="stylesheet" href="css/radio_style.css?v=14">
+      <link rel="stylesheet" href="css/radio_style.css?v=17">
 
 
   
@@ -178,7 +177,7 @@ body, html {
 
         
 
-<div class="w3-container w3-card-4 w3-margin w3-center " >
+<div class="w3-container w3-margin w3-center " >
 
     <form action="<?php echo $editFormAction; ?>" method="post" name="form1" id="msform" enctype="multipart/form-data" onSubmit="alert('Thank you for your judge.');">    
 
@@ -190,33 +189,86 @@ body, html {
           <input type="hidden" name="fkcon_id" value="<?php echo $_GET['con_id']; ?>" size="32" />
 
           <!-- Radio Button Module -->
-
-          <div align="left"><br>
+        <div class="w3-panel w3-white">
+          <div align="left">
             <h2 class="w3-text-teal" style="text-shadow:1px 1px 0 #444">Think Big</h2>
             <h3>1. Does this project demonstrate high degree of creativity?</h3>
-          </div>
-
+          </div><br><br><br><br>
 
                     <div class="q1"><br>
-                    <input class="" id="rad1" name="com_evai" <?php echo htmlentities(($row_Recordset1_stu['com_evai']=='0')?'checked':'', ENT_COMPAT, 'utf-8'); ?> type="radio" value="0" >
-                    <label for="rad1" >&nbsp;&nbsp;0</label>
 
-                    <input class="" id="rad2" name="com_evai" <?php echo htmlentities(($row_Recordset1_stu['com_evai']=='1')?'checked':'', ENT_COMPAT, 'utf-8'); ?> type="radio" value="1">
-                    <label for="rad2">&nbsp;&nbsp;1</label>
+          <div align="left"><h4 > 
+            <i  class="fa fa-check-circle-o w3-text-teal"></i> &nbsp;Continuous</h4>
+          </div>&nbsp;&nbsp;&nbsp;<!--
+                    <input class="" id="rad11" name="com_evai" <?php echo htmlentities(($row_Recordset1_stu['com_evai']=='0')?'checked':'', ENT_COMPAT, 'utf-8'); ?> type="radio" value="0" >
+                    <label for="rad11" >&nbsp;&nbsp;0</label> -->
 
-                    <input class="" id="rad3" name="com_evai" <?php echo htmlentities(($row_Recordset1_stu['com_evai']=='2')?'checked':'', ENT_COMPAT, 'utf-8'); ?> type="radio" value="2">
-                    <label for="rad3">&nbsp;&nbsp;2</label>
+                    <input class="" id="rad12" name="com_evai" <?php echo htmlentities(($row_Recordset1_stu['com_evai']=='1')?'checked':'', ENT_COMPAT, 'utf-8'); ?> type="radio" value="1">
+                    <label for="rad12">&nbsp;&nbsp;1&nbsp;&nbsp;</label>
 
-                    <input class="" id="rad4" name="com_evai" <?php echo htmlentities(($row_Recordset1_stu['com_evai']=='3')?'checked':'', ENT_COMPAT, 'utf-8'); ?> type="radio" value="3">
-                    <label for="rad4">&nbsp;&nbsp;3</label>
+                    <input class="" id="rad13" name="com_evai" <?php echo htmlentities(($row_Recordset1_stu['com_evai']=='2')?'checked':'', ENT_COMPAT, 'utf-8'); ?> type="radio" value="2">
+                    <label for="rad13">&nbsp;&nbsp;2&nbsp;&nbsp;</label>
 
-                    <input class="" id="rad5" name="com_evai" <?php echo htmlentities(($row_Recordset1_stu['com_evai']=='4')?'checked':'', ENT_COMPAT, 'utf-8'); ?> type="radio" value="4">
-                    <label for="rad5">&nbsp;&nbsp;4</label>
+                    <input class="" id="rad14" name="com_evai" <?php echo htmlentities(($row_Recordset1_stu['com_evai']=='3')?'checked':'', ENT_COMPAT, 'utf-8'); ?> type="radio" value="3">
+                    <label for="rad14">&nbsp;&nbsp;3&nbsp;&nbsp;</label>
 
-                    <input class="" id="rad6" name="com_evai" <?php echo htmlentities(($row_Recordset1_stu['com_evai']=='5')?'checked':'', ENT_COMPAT, 'utf-8'); ?> type="radio" value="5">
-                    <label for="rad6">&nbsp;&nbsp;5</label>
+                    <input class="" id="rad15" name="com_evai" <?php echo htmlentities(($row_Recordset1_stu['com_evai']=='4')?'checked':'', ENT_COMPAT, 'utf-8'); ?> type="radio" value="4">
+                    <label for="rad15">&nbsp;&nbsp;4&nbsp;&nbsp;</label>
+
+                    <input class="" id="rad16" name="com_evai" <?php echo htmlentities(($row_Recordset1_stu['com_evai']=='5')?'checked':'', ENT_COMPAT, 'utf-8'); ?> type="radio" value="5">
+                    <label for="rad16">&nbsp;&nbsp;5 &nbsp;&nbsp;</label>
+
+
+          <div align="left">
+            <h5><i  class="fa fa-check-circle-o w3-text-teal"></i> &nbsp;Breakthrough</h5>
+          </div>&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;
+                    <input class="" id="rad17" name="com_evai" <?php echo htmlentities(($row_Recordset1_stu['com_evai']=='6')?'checked':'', ENT_COMPAT, 'utf-8'); ?> type="radio" value="6" >
+                    <label for="rad17" >&nbsp;&nbsp;6&nbsp;&nbsp;</label>
+
+                    <input class="" id="rad18" name="com_evai" <?php echo htmlentities(($row_Recordset1_stu['com_evai']=='7')?'checked':'', ENT_COMPAT, 'utf-8'); ?> type="radio" value="7">
+                    <label for="rad18">&nbsp;&nbsp;7&nbsp;&nbsp;</label>
+
+                    <input class="" id="rad19" name="com_evai" <?php echo htmlentities(($row_Recordset1_stu['com_evai']=='8')?'checked':'', ENT_COMPAT, 'utf-8'); ?> type="radio" value="8">
+                    <label for="rad19">&nbsp;&nbsp;8&nbsp;&nbsp;&nbsp;</label>
+
+                    <input class="" id="rad110" name="com_evai" <?php echo htmlentities(($row_Recordset1_stu['com_evai']=='9')?'checked':'', ENT_COMPAT, 'utf-8'); ?> type="radio" value="9">
+                    <label for="rad110">&nbsp;&nbsp;9&nbsp;&nbsp;&nbsp;</label>
+
+                    <input class="" id="rad111" name="com_evai" <?php echo htmlentities(($row_Recordset1_stu['com_evai']=='10')?'checked':'', ENT_COMPAT, 'utf-8'); ?> type="radio" value="10">
+                    <label for="rad111">&nbsp;&nbsp;10&nbsp;&nbsp;</label>
+<br>
+
+          <div align="left">
+            <h5><i  class="fa fa-check-circle-o w3-text-teal"></i> &nbsp;Out of Box Changes the Fundamental</h5>
+          </div>&nbsp;&nbsp;&nbsp;
+                    <input class="" id="rad112" name="com_evai" <?php echo htmlentities(($row_Recordset1_stu['com_evai']=='12')?'checked':'', ENT_COMPAT, 'utf-8'); ?> type="radio" value="12" >
+                    <label for="rad112" >&nbsp;&nbsp;12</label>
+
+                    <input class="" id="rad113" name="com_evai" <?php echo htmlentities(($row_Recordset1_stu['com_evai']=='14')?'checked':'', ENT_COMPAT, 'utf-8'); ?> type="radio" value="14">
+                    <label for="rad113">&nbsp;&nbsp;14</label>
+
+                    <input class="" id="rad114" name="com_evai" <?php echo htmlentities(($row_Recordset1_stu['com_evai']=='16')?'checked':'', ENT_COMPAT, 'utf-8'); ?> type="radio" value="16">
+                    <label for="rad114">&nbsp;&nbsp;16</label>
+
+                    <input class="" id="rad115" name="com_evai" <?php echo htmlentities(($row_Recordset1_stu['com_evai']=='18')?'checked':'', ENT_COMPAT, 'utf-8'); ?> type="radio" value="18">
+                    <label for="rad115">&nbsp;&nbsp;18</label>
+
+                    <input class="" id="rad116" name="com_evai" <?php echo htmlentities(($row_Recordset1_stu['com_evai']=='20')?'checked':'', ENT_COMPAT, 'utf-8'); ?> type="radio" value="20">
+                    <label for="rad116">&nbsp;&nbsp;20</label>
+
+
 
                   </div>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+        </div>
+<!--171130
           <div align="left"><br><br>
             <h3>2. Does the innovation generates high value for the company?</h3>
           </div>
@@ -239,10 +291,12 @@ body, html {
                     <input class="" id="rad26" name="com_evaii" <?php echo htmlentities(($row_Recordset1_stu['com_evaii']=='5')?'checked':'', ENT_COMPAT, 'utf-8'); ?> type="radio" value="5">
                     <label for="rad26" >&nbsp;&nbsp;5</label>
                   </div>
+-->
 
-          <div align="left"><br><br>
+        <div class="w3-panel w3-white">
+          <div align="left">
             <h2 class="w3-text-green" style="text-shadow:1px 1px 0 #444">Make it Happen</h2>
-            <h3>3. Does the project demonstrate systematic approach in their execution and problem solving?</h3>
+            <h3>2. Does the project demonstrate systematic approach in their execution and problem solving?</h3>
           </div>
                     <input class="" id="rad31" name="com_evaiii" <?php echo htmlentities(($row_Recordset1_stu['com_evaiii']=='0')?'checked':'', ENT_COMPAT, 'utf-8'); ?> type="radio" value="0">
                     <label for="rad31" >&nbsp;&nbsp;0</label>
@@ -263,7 +317,7 @@ body, html {
                     <label for="rad36" >&nbsp;&nbsp;5</label>
 
           <div align="left"><br>
-            <h3>4. Does the project deliver high impact outcome?</h3>
+            <h3>3. Does the project deliver high impact outcome?</h3>
           </div>
                     <input class="" id="rad41" name="com_evaiv" <?php echo htmlentities(($row_Recordset1_stu['com_evaiv']=='0')?'checked':'', ENT_COMPAT, 'utf-8'); ?> type="radio" value="0">
                     <label for="rad41" >&nbsp;&nbsp;0</label>
@@ -282,13 +336,17 @@ body, html {
 
                     <input class="" id="rad46" name="com_evaiv" <?php echo htmlentities(($row_Recordset1_stu['com_evaiv']=='5')?'checked':'', ENT_COMPAT, 'utf-8'); ?> type="radio" value="5">
                     <label for="rad46" >&nbsp;&nbsp;5</label>
+                  <br>
+                  <br>
+                  <br>
+        </div>
 
 
 
-
-          <div align="left"><br>
+        <div class="w3-panel w3-white">
+          <div align="left">
             <h2 class="w3-text-orange" style="text-shadow:1px 1px 0 #444">Do it Together</h2>
-            <h3>5. Does the project demonstrate cross-functional collaboration?</h3>
+            <h3>4. Does the project demonstrate cross-functional collaboration?</h3>
           </div>
                     <input class="" id="rad51" name="com_evav" <?php echo htmlentities(($row_Recordset1_stu['com_evav']=='0')?'checked':'', ENT_COMPAT, 'utf-8'); ?> type="radio" value="0">
                     <label for="rad51" >&nbsp;&nbsp;0</label>
@@ -309,7 +367,7 @@ body, html {
                     <label for="rad56" >&nbsp;&nbsp;5</label>
 
           <div align="left"><br>
-            <h3>6. Does the project enhance communication and relationship with their customers?</h3>
+            <h3>5. Does the project enhance communication and relationship with their customers?</h3>
           </div>
                     <input class="" id="rad61" name="com_evavi" <?php echo htmlentities(($row_Recordset1_stu['com_evavi']=='0')?'checked':'', ENT_COMPAT, 'utf-8'); ?> type="radio" value="0">
                     <label for="rad61" >&nbsp;&nbsp;0</label>
@@ -329,9 +387,14 @@ body, html {
                     <input class="" id="rad66" name="com_evavi" <?php echo htmlentities(($row_Recordset1_stu['com_evavi']=='5')?'checked':'', ENT_COMPAT, 'utf-8'); ?> type="radio" value="5">
                     <label for="rad66" >&nbsp;&nbsp;5</label>
 
-          <div align="left"><br>
+                  <br>
+                  <br>
+                  <br>
+        </div>
+        <div class="w3-panel w3-white">
+          <div align="left">
             <h2 class="w3-text-green" style="text-shadow:1px 1px 0 #444">Bonus</h2>
-            <h3>7. Overall presentation flow and clarity.</h3>
+            <h3>6. Overall presentation flow and clarity.</h3>
           </div>
                     <input class="" id="rad71" name="com_evavii" <?php echo htmlentities(($row_Recordset1_stu['com_evavii']=='0')?'checked':'', ENT_COMPAT, 'utf-8'); ?> type="radio" value="0">
                     <label for="rad71" >&nbsp;&nbsp;0</label>
@@ -351,7 +414,10 @@ body, html {
                     <input class="" id="rad76" name="com_evavii" <?php echo htmlentities(($row_Recordset1_stu['com_evavii']=='5')?'checked':'', ENT_COMPAT, 'utf-8'); ?> type="radio" value="5">
                     <label for="rad76" >&nbsp;&nbsp;5</label>
 
-
+                  <br>
+                  <br>
+                  <br>
+        </div>
 
           <div align="left">
             <br>
@@ -387,11 +453,6 @@ body, html {
 
 </div>
 </div>
-<?php 
-    //Footer
-    require_once 'web_element/footer.php'; 
-?> 
-
 
 
 
@@ -399,6 +460,14 @@ body, html {
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
 
 
+
+
+  
+
+<?php 
+    //Footer
+    require_once 'web_element/footer.php'; 
+?> 
 
 </body>
 </html>

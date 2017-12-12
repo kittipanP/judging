@@ -3,6 +3,7 @@
 		<meta charset="utf-8">
 	<title>Thailand Innovation Barzaar</title>
 
+<link rel="icon" type="image/png" href="../img/icon/westernDigital.jpg"/>
   <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Open+Sans'>
 
       <link rel="stylesheet" href="css/style.css?v=5">

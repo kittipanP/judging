@@ -297,7 +297,7 @@ body, html {
         <div class="w3-panel w3-white">
           <div align="left">
             <h2 class="w3-text-green" style="text-shadow:1px 1px 0 #444">Make it Happen</h2>
-            <h3>3. Does the project demonstrate systematic approach in their execution and problem solving?</h3>
+            <h3>2. Does the project demonstrate systematic approach in their execution and problem solving?</h3>
           </div>
                     <input class="" id="rad31" name="com_evaiii" <?php echo htmlentities(($row_Recordset1_stu['com_evaiii']=='0')?'checked':'', ENT_COMPAT, 'utf-8'); ?> type="radio" value="0">
                     <label for="rad31" >&nbsp;&nbsp;0</label>
@@ -318,7 +318,7 @@ body, html {
                     <label for="rad36" >&nbsp;&nbsp;5</label>
 
           <div align="left"><br>
-            <h3>4. Does the project deliver high impact outcome?</h3>
+            <h3>3. Does the project deliver high impact outcome?</h3>
           </div>
                     <input class="" id="rad41" name="com_evaiv" <?php echo htmlentities(($row_Recordset1_stu['com_evaiv']=='0')?'checked':'', ENT_COMPAT, 'utf-8'); ?> type="radio" value="0">
                     <label for="rad41" >&nbsp;&nbsp;0</label>
@@ -347,7 +347,7 @@ body, html {
         <div class="w3-panel w3-white">
           <div align="left">
             <h2 class="w3-text-orange" style="text-shadow:1px 1px 0 #444">Do it Together</h2>
-            <h3>5. Does the project demonstrate cross-functional collaboration?</h3>
+            <h3>4. Does the project demonstrate cross-functional collaboration?</h3>
           </div>
                     <input class="" id="rad51" name="com_evav" <?php echo htmlentities(($row_Recordset1_stu['com_evav']=='0')?'checked':'', ENT_COMPAT, 'utf-8'); ?> type="radio" value="0">
                     <label for="rad51" >&nbsp;&nbsp;0</label>
@@ -368,7 +368,7 @@ body, html {
                     <label for="rad56" >&nbsp;&nbsp;5</label>
 
           <div align="left"><br>
-            <h3>6. Does the project enhance communication and relationship with their customers?</h3>
+            <h3>5. Does the project enhance communication and relationship with their customers?</h3>
           </div>
                     <input class="" id="rad61" name="com_evavi" <?php echo htmlentities(($row_Recordset1_stu['com_evavi']=='0')?'checked':'', ENT_COMPAT, 'utf-8'); ?> type="radio" value="0">
                     <label for="rad61" >&nbsp;&nbsp;0</label>
@@ -395,7 +395,7 @@ body, html {
         <div class="w3-panel w3-white">
           <div align="left">
             <h2 class="w3-text-green" style="text-shadow:1px 1px 0 #444">Bonus</h2>
-            <h3>7. Overall presentation flow and clarity.</h3>
+            <h3>6. Overall presentation flow and clarity.</h3>
           </div>
                     <input class="" id="rad71" name="com_evavii" <?php echo htmlentities(($row_Recordset1_stu['com_evavii']=='0')?'checked':'', ENT_COMPAT, 'utf-8'); ?> type="radio" value="0">
                     <label for="rad71" >&nbsp;&nbsp;0</label>
