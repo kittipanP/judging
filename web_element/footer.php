@@ -3,6 +3,6 @@
     <h5>Footer</h5>
     </div>-->
     <div class="w3-container w3-theme-d5  " >
-       <p>© 2017 <a href="#" target="_blank">kittipanP</a>, All Rights Reserved.  </p>
+       <p>Thailand <a href="#" target="_blank">Innovation </a>Bazaar  </p>
     </div>
 </footer>

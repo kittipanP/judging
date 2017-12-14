@@ -511,6 +511,102 @@ html, body {
   </div>
 </div>
 
+
+
+        <table class="w3-table w3-striped w3-white">
+          <tr>
+            <td></td>
+            <td><i class="fa fa-circle w3-large" style="color: #B22222"></i>&nbsp;&nbsp;ATC Direct screw feed to finder</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><i class="fa fa-circle w3-large" style="color: #FF1493"></i>&nbsp;&nbsp;Fault detection</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><i class="fa fa-circle w3-large" style="color: #FF0000"></i>&nbsp;&nbsp;1-5 Reusable Master Sample for Nested GR&R Improvement for ISA Shear Shear Strength Test</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><i class="fa fa-circle w3-large" style="color: #FF4500"></i>&nbsp;&nbsp;1-8 Automated Visual Inspection</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><i class="fa fa-circle w3-large" style="color: #FFFF00"></i>&nbsp;&nbsp;LHA head binning to reduce ADC variation</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><i class="fa fa-circle w3-large" style="color: #FF8C00"></i>&nbsp;&nbsp;LHA Early Touchdown Improvement by X2H Disable</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><i class="fa fa-circle w3-large" style="color: #98FB98"></i>&nbsp;&nbsp;HGA Auto Gripper for Auto De-Swage Machine</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><i class="fa fa-circle w3-large" style="color: #32CD32"></i>&nbsp;&nbsp;2-1 HGA Auto Wipe</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><i class="fa fa-circle w3-large" style="color: #228D22"></i>&nbsp;&nbsp;ESD Plate for automation</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><i class="fa fa-circle w3-large" style="color: #000080"></i>&nbsp;&nbsp;Change new screw type to eliminate HSA Solvent Tray burr</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><i class="fa fa-circle w3-large" style="color: #4169E1"></i>&nbsp;&nbsp;5-1 Lapping Chemical Sensor</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><i class="fa fa-circle w3-large" style="color: #87CEEB"></i>&nbsp;&nbsp;IMS Animation</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><i class="fa fa-circle w3-large" style="color: #483D8B"></i>&nbsp;&nbsp;iTrolley New era of HDD Handling (A step to Industry 4.0 & eLEAN</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><i class="fa fa-circle w3-large" style="color: #7B6BEE"></i>&nbsp;&nbsp;4-1 Palmer/Spyglassv Media Lube Change</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><i class="fa fa-circle w3-large" style="color: #E6E6FA"></i>&nbsp;&nbsp;Wash cap</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><i class="fa fa-circle w3-large" style="color: #D3D3D3"></i>&nbsp;&nbsp;Aerodynamic Container design for bag installation</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><i class="fa fa-circle w3-large" style="color: #708090"></i>&nbsp;&nbsp;5-2 Fixture of Hi Power- สามขามาแว้ววววววา</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><i class="fa fa-circle w3-large" style="color: #000000"></i>&nbsp;&nbsp;Spacer tray</td>
+            <td></td>
+          </tr>
+        </table>
+
+
 <br>
 <br>
 <br>
@@ -528,7 +624,7 @@ html, body {
     <h5>Footer</h5>
     </div>-->
     <div class="w3-container w3-theme-d5  " > 
-       <p>© 2017 <a href="#" target="_blank">kittipanP</a>, All Rights Reserved.  </p>
+       <p>Thailand <a href="#" target="_blank"> Innovation </a> Bazaar</p>
     </div>
 </footer>
 
@@ -536,7 +632,7 @@ html, body {
 
   <script src='https://code.jquery.com/jquery-1.11.2.min.js'></script>
 
-    <script  src="js/index.js?v=1019"></script>
+    <script  src="js/index.js?v=1212131"></script>
 
 
 </body>

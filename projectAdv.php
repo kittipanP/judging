@@ -132,15 +132,15 @@ html, body {
 <div class="w3-container w3-content" style="max-width:1000px;margin-top:80px">
         <div class="w3-container w3-card-2 w3-white w3-round w3-margin" id="onProcess">
                       <h2>Process Technology [Technician, Staff and Engineer]</h2>
-                      <p>Please Click the project for giving your judging</p>
+                      <p>Please Click <a class="w3-button w3-grey w3-round-large w3-hover-blue"><i class="fa fa-pencil"></i></a> for giving your judging</p>
                     
                     
                     <table class="w3-table-all w3-margin-top w3-hoverable " id="onProcessiiTable" >
                         <tr>
                           
                           <th style="width:5%;">No.</th>
-                          <th style="width:25%;">Poster</th>
-                          <th style="width:50%;">Your Judge</th>
+                          <th style="width:80%;">Project Name</th>
+                          <th style="width:10%;">Your Judge</th>
                           <!--<th style="width:15%;">Score Result</th> -->
                           <th style="width:5%;">Judge</th>
                         </tr>
@@ -165,10 +165,11 @@ html, body {
                           
                               ?>
                               <td><?php echo $row_studentSet['con_id']; ?></td>
-                              <td>
-
+                              <td><?php echo $row_studentSet['con_project']; ?>
+<!--171214
                   <img src="img/poster/<?php echo $row_studentSet['con_poster']; ?>" style="width:50px;cursor:pointer" 
                   onclick="onClick(this)" class="w3-hover-opacity">
+-->
                                 
 
                               </td>
@@ -181,7 +182,7 @@ html, body {
                                       +$row_studentSet['com_evavii']; ?>
 
                               <?php 
-                              if($s_login_id== '1' || $s_login_id== '2' ||$s_login_id== '3' || $s_login_id== '4'){
+                              if($s_login_id== '2' ||$s_login_id== '3' || $s_login_id== '4'){
                               ?>
                                 <td><?php if($eva_result==NULL){ echo "N/A";}else{ echo $eva_result;} ?></td>
                                 <!--<td><?php echo $row_studentSet['con_name']; ?></td> -->

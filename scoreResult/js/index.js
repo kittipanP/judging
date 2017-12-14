@@ -2,73 +2,73 @@ var chart = AmCharts.makeChart("chartdiv", {
   "type": "serial",
   "startDuration": 2,
   "dataProvider": [{
-    "country": "team HDD 1",
+    "country": "",
     "visits": result_advHHDi,
-    "color": "#FF0F00"
+    "color": "#B22222"
   }, {
     "country": "<br>team HDD 2",
     "visits": result_advHHDii,
-    "color": "#FF6600"
+    "color": "#FF1493"
   }, {
     "country": "<br><br>team THO 1",
     "visits": result_advTHOi,
-    "color": "#FF9E01"
+    "color": "#FF0000"
   }, {
     "country": "team THO 2",
     "visits": result_advTHOii,
-    "color": "#FCD202"
+    "color": "#FF4500"
   }, {
     "country": "<br>team PRB 1",
     "visits": result_advPRBi,
-    "color": "#F8FF01"
+    "color": "#FFFF00"
   }, {
     "country": "<br><br>team PRB 2",
     "visits": result_advPRBii,
-    "color": "#B0DE09"
+    "color": "#FF8C00"
   }, {
     "country": "Quality [Eng] HDD",
     "visits": result_QualityEngHDD,
-    "color": "#04D215"
+    "color": "#98FB98"
   }, {
     "country": "<br>Quality [Eng] THO",
     "visits": result_QualityEngTHO,
-    "color": "#0D8ECF"
+    "color": "#32CD32"
   }, {
     "country": "<br><br>Quality [Eng] PRB",
     "visits": result_QualityEngPRB,
-    "color": "#0D52D1"
+    "color": "#228D22"
   }, {
     "country": "Quality [DL/Tech] HDD",
     "visits": QualityDLTechHDD,
-    "color": "#2A0CD0"
+    "color": "#000080"
   }, {
     "country": "<br>Quality [DL/Tech]THO",
     "visits": QualityDLTechTHO,
-    "color": "#8A0CCF"
+    "color": "#4169E1"
   }, {
     "country": "<br><br>Quality [DL/Tech]PRB",
     "visits": QualityDLTechPRB,
-    "color": "#CD0D74"
+    "color": "#87CEEB"
   }, {
     "country": "Ops [Eng] HDD",
     "visits": result_OpsEngHDD,
-    "color": "#754DEB"
+    "color": "#483D8B"
   }, {
     "country": "<br>Ops [Eng] THO",
     "visits": result_OpsEngTHO,
-    "color": "#DDDDDD"
+    "color": "#7B6BEE"
   }, {
     "country": "<br><br>Ops [Eng]PRB",
     "visits": result_OpsEngPRB,
-    "color": "#999999"
+    "color": "#E6E6FA"
   }, {
     "country": "Ops [DL/Tech]HDD",
     "visits": result_OpsDLTechHDD,
-    "color": "#333333"
+    "color": "#D3D3D3"
   }, {
     "country": "<br>Ops [DL/Tech]THO",
     "visits": result_OpsDLTechTHO,
-    "color": "#000000"
+    "color": "#708090"
   }, {
     "country": "<br><br>Ops [DL/Tech]PRB",
     "visits": result_OpsDLTechPRB,

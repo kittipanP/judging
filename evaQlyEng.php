@@ -185,6 +185,9 @@ body, html {
 <br>
 
 
+        <div class="w3-panel w3-card-4 w3-center w3-pale-green"><p align="left">Project Name: </p><h1 style="text-shadow:0px 0px 0 #444"  class="w3-text-black"><b><?php echo $row_Recordset1_stu['con_project'];?></b></h1><br></div>
+        
+
 
           <input type="hidden" name="fkcon_id" value="<?php echo $_GET['con_id']; ?>" size="32" />
 

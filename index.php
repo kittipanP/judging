@@ -249,7 +249,7 @@ html, body {
                             </div>
   <div class="w3-container">
     <div class="w3-center">
-  <p>Operations/Yield/Cost/People</p></div>
+  <p>Operation Excellence</p></div>
   </div>
 </div>
 </div>
